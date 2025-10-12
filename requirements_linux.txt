@@ -1,12 +1,6 @@
---extra-index-url https://download.pytorch.org/whl/cu124
-
-torch==2.5.0+cu124
-torchvision==0.20.0+cu124
-xformers==0.0.28.post2
-
+--extra-index-url https://download.pytorch.org/whl/nightly/cu130
+torch
+torchvision
+torchaudio
 bitsandbytes==0.44.0
-tensorboard==2.14.0
-tensorflow==2.14.0
 onnxruntime-gpu==1.19.2
-flash-attention==2.0.0
-sage-attention==0.1.0

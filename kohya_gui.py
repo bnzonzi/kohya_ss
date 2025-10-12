@@ -108,6 +108,7 @@ def UI(**kwargs):
     launch_params = {k: v for k, v in launch_params.items() if v is not None}
 
     # Launch the Gradio interface with the specified parameters
+    launch_params["share"] = False
     ui_interface.launch(**launch_params)
 
 # Function to initialize argument parser for command-line arguments
@@ -145,12 +146,13 @@ if __name__ == "__main__":
         log.warning("Skipping requirements verification.")
     else:
         # Run the validation command to verify requirements
-        validation_command = [PYTHON, os.path.join(project_dir, "setup", "validate_requirements.py")]
+        # validation_command = [PYTHON, os.path.join(project_dir, "setup", "validate_requirements.py")]
         
-        if args.requirements is not None:
-            validation_command.append(f"--requirements={args.requirements}")
+        # if args.requirements is not None:
+        #     validation_command.append(f"--requirements={args.requirements}")
             
-        subprocess.run(validation_command, check=True)
+        # subprocess.run(validation_command, check=True)
+        pass
 
     # Launch the UI with the provided arguments
-    UI(**vars(args))
+UI(**vars(args))

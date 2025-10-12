@@ -2,5 +2,6 @@
     "python.linting.enabled": true,
     "python.formatting.provider": "yapf",
     "DockerRun.DisableDockerrc": true,
-    "augment.enableAutomaticCompletions": true
+    "augment.enableAutomaticCompletions": true,
+    "cmake.sourceDirectory": "/media/barac2to/sd3-flux.1/pytorch"
 }
