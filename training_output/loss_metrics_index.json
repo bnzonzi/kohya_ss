@@ -1,0 +1,3007 @@
+{
+  "generated_at": "2026-10-27T13:31:00+02:00",
+  "runs": {
+    "nemeriys_sdxl_v2": {
+      "title": "Nemeriys — SDXL LoRA v2 (rank 72 / alpha 36)",
+      "trigger": "nemeriys",
+      "base_model_real": "SDXL/juggernautXL_ragnarokBy.safetensors",
+      "recommended_step": 2100,
+      "secondary_step": 6000,
+      "status": "Terminé",
+      "steps_done": 6000,
+      "steps_target": 6000,
+      "finished_at": "2026-10-27 13:31 Europe/Paris",
+      "config": "/media/barac2to/sd3-flux.1/training_output/nemeris_sdxl/config_lora_nemeriys_sdxl.toml",
+      "dataset_toml": "/media/barac2to/sd3-flux.1/training_output/nemeris_sdxl/dataset_nemeriys_sdxl.toml",
+      "dataset": "82 images + 82 captions .txt, repeats 4, 1024. Dossier /home/nzonzi/ComfyUI/output/ComfyUI_Flux_Dataset_Nemeriys/dossier. Régularisation : training_output/nemeris_flux/reg_260_from_1_woman (class token woman).",
+      "log_tb": "/media/barac2to/sd3-flux.1/training_output/nemeris_sdxl/tb/20261027065212/nemeriys_sdxl/events.out.tfevents.1793080357.advanux.1667316.0",
+      "log_text": "/media/barac2to/sd3-flux.1/training_output/nemeris_sdxl/nemeriys_sdxl-v2.log",
+      "log_text_note": "Fichier texte vide (0 octet). Les scalaires viennent du fichier TensorBoard ci-dessus.",
+      "final_checkpoint": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2.safetensors",
+      "final_sha256_head": "3bc874c9e7",
+      "nan_steps_excluded": 0,
+      "ignored_run": "Run NaN nemeris_1026 arrêté au step 189, non inclus.",
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00002100.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00002100.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "206f2eb27c",
+          "ss_steps": 2100,
+          "ss_epoch": 3,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.2552,
+          "lora_up_rms": 0.001027,
+          "step": 2100,
+          "avr_loss": 0.078933,
+          "cur_loss": 0.122103,
+          "lr_unet": 9.938441507983953e-05,
+          "lr_te": 4.9692207539919764e-05,
+          "delta_prev": -0.003579,
+          "delta_loss": 0.0,
+          "rank": 1,
+          "badge": "SWEET SPOT",
+          "note": "Meilleur loss/average parmi les checkpoints sauvés tous les 300 steps."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00001200.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00001200.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "69a2ae7bd9",
+          "ss_steps": 1200,
+          "ss_epoch": 1,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.1541,
+          "lora_up_rms": 0.000945,
+          "step": 1200,
+          "avr_loss": 0.079283,
+          "cur_loss": 0.138653,
+          "lr_unet": 3.4549149859230965e-05,
+          "lr_te": 1.7274574929615483e-05,
+          "delta_prev": -0.006009,
+          "delta_loss": 0.00035,
+          "rank": 2,
+          "badge": "TOP 2",
+          "note": "Écart au meilleur : +0.0003."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00000300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00000300.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "d998851ad2",
+          "ss_steps": 300,
+          "ss_epoch": 0,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 0.8247,
+          "lora_up_rms": 0.000675,
+          "step": 300,
+          "avr_loss": 0.079751,
+          "cur_loss": 0.007994,
+          "lr_unet": 9.455032704863697e-05,
+          "lr_te": 4.7275163524318486e-05,
+          "delta_prev": 0.0,
+          "delta_loss": 0.000818,
+          "rank": 3,
+          "badge": "TOP 3",
+          "note": "Écart au meilleur : +0.0008."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00001500.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00001500.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "5728eaef3b",
+          "ss_steps": 1500,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.1695,
+          "lora_up_rms": 0.000957,
+          "step": 1500,
+          "avr_loss": 0.080212,
+          "cur_loss": 0.161302,
+          "lr_unet": 1.4644660950580146e-05,
+          "lr_te": 7.322330475290073e-06,
+          "delta_prev": 0.000929,
+          "delta_loss": 0.001279,
+          "rank": 4,
+          "badge": "TOP 4",
+          "note": "Écart au meilleur : +0.0013."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00002400.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00002400.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "be74c0d87c",
+          "ss_steps": 2400,
+          "ss_epoch": 3,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.3928,
+          "lora_up_rms": 0.00114,
+          "step": 2400,
+          "avr_loss": 0.080268,
+          "cur_loss": 0.021239,
+          "lr_unet": 9.045084880199283e-05,
+          "lr_te": 4.522542440099642e-05,
+          "delta_prev": 0.001335,
+          "delta_loss": 0.001335,
+          "rank": 5,
+          "badge": "TOP 5",
+          "note": "Écart au meilleur : +0.0013."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00003300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00003300.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "0acf6757b0",
+          "ss_steps": 3300,
+          "ss_epoch": 5,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.5765,
+          "lora_up_rms": 0.00129,
+          "step": 3300,
+          "avr_loss": 0.080422,
+          "cur_loss": 0.049315,
+          "lr_unet": 2.7300475267111324e-05,
+          "lr_te": 1.3650237633555662e-05,
+          "delta_prev": -0.000898,
+          "delta_loss": 0.001489,
+          "rank": 6,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0015."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00003000.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00003000.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "ea811f39ed",
+          "ss_steps": 3000,
+          "ss_epoch": 4,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.5552,
+          "lora_up_rms": 0.001273,
+          "step": 3000,
+          "avr_loss": 0.08132,
+          "cur_loss": 0.002573,
+          "lr_unet": 4.999999873689376e-05,
+          "lr_te": 2.499999936844688e-05,
+          "delta_prev": -0.002803,
+          "delta_loss": 0.002387,
+          "rank": 7,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0024."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00004200.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00004200.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "59874b6307",
+          "ss_steps": 4200,
+          "ss_epoch": 6,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.6684,
+          "lora_up_rms": 0.001365,
+          "step": 4200,
+          "avr_loss": 0.081488,
+          "cur_loss": 0.004419,
+          "lr_unet": 9.75528237177059e-05,
+          "lr_te": 4.877641185885295e-05,
+          "delta_prev": -0.000141,
+          "delta_loss": 0.002555,
+          "rank": 8,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0026."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00003900.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00003900.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "9da60bd2bc",
+          "ss_steps": 3900,
+          "ss_epoch": 5,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.5813,
+          "lora_up_rms": 0.001294,
+          "step": 3900,
+          "avr_loss": 0.081629,
+          "cur_loss": 0.228866,
+          "lr_unet": 6.155829623821774e-07,
+          "lr_te": 3.077914811910887e-07,
+          "delta_prev": -0.00097,
+          "delta_loss": 0.002696,
+          "rank": 9,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0027."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00001800.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00001800.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "86c069ebdf",
+          "ss_steps": 1800,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.1751,
+          "lora_up_rms": 0.000962,
+          "step": 1800,
+          "avr_loss": 0.082512,
+          "cur_loss": 0.286826,
+          "lr_unet": 2.447174210828962e-06,
+          "lr_te": 1.223587105414481e-06,
+          "delta_prev": 0.0023,
+          "delta_loss": 0.003579,
+          "rank": 10,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0036."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00003600.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00003600.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "1f81f83fa2",
+          "ss_steps": 3600,
+          "ss_epoch": 5,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.5807,
+          "lora_up_rms": 0.001294,
+          "step": 3600,
+          "avr_loss": 0.082599,
+          "cur_loss": 0.0855,
+          "lr_unet": 9.549150490784086e-06,
+          "lr_te": 4.774575245392043e-06,
+          "delta_prev": 0.002177,
+          "delta_loss": 0.003666,
+          "rank": 11,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0037."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00005100.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00005100.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "2a6a295b33",
+          "ss_steps": 5100,
+          "ss_epoch": 7,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.9069,
+          "lora_up_rms": 0.001561,
+          "step": 5100,
+          "avr_loss": 0.083292,
+          "cur_loss": 0.008611,
+          "lr_unet": 4.217827518004924e-05,
+          "lr_te": 2.108913759002462e-05,
+          "delta_prev": -0.002161,
+          "delta_loss": 0.004359,
+          "rank": 12,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0044."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00000600.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00000600.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "461bdd9d15",
+          "ss_steps": 600,
+          "ss_epoch": 0,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 0.9986,
+          "lora_up_rms": 0.000817,
+          "step": 600,
+          "avr_loss": 0.084051,
+          "cur_loss": 0.009556,
+          "lr_unet": 7.938926137285307e-05,
+          "lr_te": 3.9694630686426535e-05,
+          "delta_prev": 0.0043,
+          "delta_loss": 0.005118,
+          "rank": 13,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0051."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00002700.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00002700.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "1109762c7f",
+          "ss_steps": 2700,
+          "ss_epoch": 4,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.4953,
+          "lora_up_rms": 0.001224,
+          "step": 2700,
+          "avr_loss": 0.084123,
+          "cur_loss": 0.274128,
+          "lr_unet": 7.26995276636444e-05,
+          "lr_te": 3.63497638318222e-05,
+          "delta_prev": 0.003855,
+          "delta_loss": 0.00519,
+          "rank": 14,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0052."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00000900.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00000900.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "ceb323530d",
+          "ss_steps": 900,
+          "ss_epoch": 1,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.1072,
+          "lora_up_rms": 0.000906,
+          "step": 900,
+          "avr_loss": 0.085292,
+          "cur_loss": 0.025563,
+          "lr_unet": 5.7821722293738276e-05,
+          "lr_te": 2.8910861146869138e-05,
+          "delta_prev": 0.001241,
+          "delta_loss": 0.006359,
+          "rank": 15,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0064."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00004800.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00004800.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "d3fd15d618",
+          "ss_steps": 4800,
+          "ss_epoch": 7,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.8719,
+          "lora_up_rms": 0.001532,
+          "step": 4800,
+          "avr_loss": 0.085453,
+          "cur_loss": 0.221726,
+          "lr_unet": 6.545084761455655e-05,
+          "lr_te": 3.2725423807278275e-05,
+          "delta_prev": -0.000586,
+          "delta_loss": 0.00652,
+          "rank": 16,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0065."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00004500.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00004500.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "cac743765a",
+          "ss_steps": 4500,
+          "ss_epoch": 6,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.7911,
+          "lora_up_rms": 0.001466,
+          "step": 4500,
+          "avr_loss": 0.086039,
+          "cur_loss": 0.106349,
+          "lr_unet": 8.535533561371267e-05,
+          "lr_te": 4.2677667806856334e-05,
+          "delta_prev": 0.004551,
+          "delta_loss": 0.007106,
+          "rank": 17,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0071."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00006000.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00006000.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "6dbba77847",
+          "ss_steps": 6000,
+          "ss_epoch": 9,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.9165,
+          "lora_up_rms": 0.001568,
+          "step": 6000,
+          "avr_loss": 0.087004,
+          "cur_loss": 0.218102,
+          "lr_unet": 0.0,
+          "lr_te": 0.0,
+          "delta_prev": -0.003322,
+          "delta_loss": 0.008071,
+          "rank": 18,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0081."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00005400.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00005400.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "72ae841371",
+          "ss_steps": 5400,
+          "ss_epoch": 8,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.9152,
+          "lora_up_rms": 0.001567,
+          "step": 5400,
+          "avr_loss": 0.087739,
+          "cur_loss": 0.005977,
+          "lr_unet": 2.061073791992385e-05,
+          "lr_te": 1.0305368959961925e-05,
+          "delta_prev": 0.004447,
+          "delta_loss": 0.008806,
+          "rank": 19,
+          "badge": "SUIVI",
+          "note": "Écart au meilleur : +0.0088."
+        },
+        {
+          "exists": true,
+          "filename": "nemeriys_sdxl_v2-step00005700.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00005700.safetensors",
+          "size_mb": 489.7,
+          "sha256_head": "58792070fd",
+          "ss_steps": 5700,
+          "ss_epoch": 8,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "36",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.9164,
+          "lora_up_rms": 0.001568,
+          "step": 5700,
+          "avr_loss": 0.090326,
+          "cur_loss": 0.265452,
+          "lr_unet": 5.449673608382e-06,
+          "lr_te": 2.724836804191e-06,
+          "delta_prev": 0.002587,
+          "delta_loss": 0.011393,
+          "rank": 20,
+          "badge": "LOSS LA PLUS HAUTE",
+          "note": "Plus haut loss/average des checkpoints sauvés. Loss fini, pas un NaN."
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 300,
+          "avr_loss": 0.079751,
+          "cur_loss": 0.007994
+        },
+        {
+          "step": 600,
+          "avr_loss": 0.084051,
+          "cur_loss": 0.009556
+        },
+        {
+          "step": 900,
+          "avr_loss": 0.085292,
+          "cur_loss": 0.025563
+        },
+        {
+          "step": 1200,
+          "avr_loss": 0.079283,
+          "cur_loss": 0.138653
+        },
+        {
+          "step": 1500,
+          "avr_loss": 0.080212,
+          "cur_loss": 0.161302
+        },
+        {
+          "step": 1800,
+          "avr_loss": 0.082512,
+          "cur_loss": 0.286826
+        },
+        {
+          "step": 2100,
+          "avr_loss": 0.078933,
+          "cur_loss": 0.122103
+        },
+        {
+          "step": 2400,
+          "avr_loss": 0.080268,
+          "cur_loss": 0.021239
+        },
+        {
+          "step": 2700,
+          "avr_loss": 0.084123,
+          "cur_loss": 0.274128
+        },
+        {
+          "step": 3000,
+          "avr_loss": 0.08132,
+          "cur_loss": 0.002573
+        },
+        {
+          "step": 3300,
+          "avr_loss": 0.080422,
+          "cur_loss": 0.049315
+        },
+        {
+          "step": 3600,
+          "avr_loss": 0.082599,
+          "cur_loss": 0.0855
+        },
+        {
+          "step": 3900,
+          "avr_loss": 0.081629,
+          "cur_loss": 0.228866
+        },
+        {
+          "step": 4200,
+          "avr_loss": 0.081488,
+          "cur_loss": 0.004419
+        },
+        {
+          "step": 4500,
+          "avr_loss": 0.086039,
+          "cur_loss": 0.106349
+        },
+        {
+          "step": 4800,
+          "avr_loss": 0.085453,
+          "cur_loss": 0.221726
+        },
+        {
+          "step": 5100,
+          "avr_loss": 0.083292,
+          "cur_loss": 0.008611
+        },
+        {
+          "step": 5400,
+          "avr_loss": 0.087739,
+          "cur_loss": 0.005977
+        },
+        {
+          "step": 5700,
+          "avr_loss": 0.090326,
+          "cur_loss": 0.265452
+        },
+        {
+          "step": 6000,
+          "avr_loss": 0.087004,
+          "cur_loss": 0.218102
+        }
+      ]
+    },
+    "fowx_flux": {
+      "title": "Fowx — FLUX.1-dev LoRA (Rank 32 / Alpha 128)",
+      "trigger": "fowx",
+      "base_model_real": "flux1-dev-Q8_0.gguf / flux1-dev-fp8.safetensors (VAE: FLUX1/ae.safetensors)",
+      "base_model_bug_explained": "Le widget ckpt_name de easy fluxLoader affichait par erreur SD1.5/512-inpainting-ema.safetensors alors que model_override injectait flux1-dev-Q8_0.gguf.",
+      "recommended_step": 690,
+      "secondary_step": 344,
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_network128_rank32_bf16-step00344.safetensors",
+          "path": "/home/nzonzi/ComfyUI/models/loras/DARK/flux_lora_file_fowx_network128_rank32_bf16-step00344.safetensors",
+          "size_mb": 292.3,
+          "sha256_head": "9f7a494d29",
+          "ss_steps": 344,
+          "ss_epoch": 4,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 1.996,
+          "lora_up_rms": 0.000874,
+          "step": 344,
+          "variant": "DARK_net128",
+          "avr_loss": 0.2845,
+          "cur_loss": 0.279,
+          "delta_loss": 0.0,
+          "badge": "★ VALIDÉ OK (EP 4)",
+          "note": "Validé OK (ep 4/5, 138 img 1024px, 0 reg)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_32_network128_rank32_bf16-step00428.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_32_network128_rank32_bf16-step00428.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "22325f7234",
+          "ss_steps": 428,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.8408,
+          "lora_up_rms": 0.001245,
+          "step": 428,
+          "variant": "fowx_32",
+          "avr_loss": 0.326,
+          "cur_loss": 0.318,
+          "delta_loss": 0.0415,
+          "badge": "SOUS-CONVERGÉ (0.5 EP)",
+          "note": "428/852 batches = 0.50 vrai ep (920 reg)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_64_network128_rank32_bf16-step00428.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_64_network128_rank32_bf16-step00428.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "016043f2d3",
+          "ss_steps": 428,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "prodigyplus.prodigy_plus_schedulefree.ProdigyPlusScheduleFree",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 0.0,
+          "lora_up_rms": 0.0,
+          "step": 428,
+          "variant": "fowx_64_dead",
+          "avr_loss": 0.384,
+          "cur_loss": 0.395,
+          "delta_loss": 0.058,
+          "badge": "DEAD LORA (L2=0)",
+          "note": "Prodigy lr=1e-4 erroné -> poids nuls (L2=0)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_32_network128_rank32_bf16-step00500.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_32_network128_rank32_bf16-step00500.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "0c660c1a86",
+          "ss_steps": 500,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.9821,
+          "lora_up_rms": 0.001306,
+          "step": 500,
+          "variant": "fowx_32",
+          "avr_loss": 0.298,
+          "cur_loss": 0.292,
+          "delta_loss": -0.086,
+          "badge": "REPRISE +500 (2212)",
+          "note": "Reprise 01/09 (+500s / max 2212, L2=2.98)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_network128_rank32_bf16-step00690.safetensors",
+          "path": "/home/nzonzi/ComfyUI/models/loras/DARK/flux_lora_file_fowx_network128_rank32_bf16-step00690.safetensors",
+          "size_mb": 292.3,
+          "sha256_head": "746480e85b",
+          "ss_steps": 690,
+          "ss_epoch": 7,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.2062,
+          "lora_up_rms": 0.000967,
+          "step": 690,
+          "variant": "DARK_net128",
+          "avr_loss": 0.276,
+          "cur_loss": 0.272,
+          "delta_loss": -0.022,
+          "badge": "★ VALIDÉ OK (+1 EP→828)",
+          "note": "Validé OK ep 5 (+1 ep -> step 828 possible)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_32_network128_rank32_bf16-step00856.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_32_network128_rank32_bf16-step00856.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "42a2638e9e",
+          "ss_steps": 856,
+          "ss_epoch": 3,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.8864,
+          "lora_up_rms": 0.001265,
+          "step": 856,
+          "variant": "fowx_32",
+          "avr_loss": 0.329,
+          "cur_loss": 0.334,
+          "delta_loss": 0.053,
+          "badge": "SOUS-CONVERGÉ (1.0 EP)",
+          "note": "856/852 batches = 1.00 vrai ep (920 reg)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_32_network128_rank32_bf16-step01284.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_32_network128_rank32_bf16-step01284.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "d32c597bcb",
+          "ss_steps": 1284,
+          "ss_epoch": 4,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.8868,
+          "lora_up_rms": 0.001265,
+          "step": 1284,
+          "variant": "fowx_32",
+          "avr_loss": 0.324,
+          "cur_loss": 0.321,
+          "delta_loss": -0.005,
+          "badge": "SOUS-CONVERGÉ (1.5 EP)",
+          "note": "1284/852 batches = 1.51 vrai ep (920 reg)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_32_network128_rank32_bf16-step01712.safetensors",
+          "path": "/home/nzonzi/Documents/scripts/Projets/Github/ComfyUI-Easy-Install/ComfyUI/models/loras/flux_trainer/flux_lora_file_fowx_32_network128_rank32_bf16-step01712.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "70d7e8ae72",
+          "ss_steps": 1712,
+          "ss_epoch": 5,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.9547,
+          "lora_up_rms": 0.001294,
+          "step": 1712,
+          "variant": "fowx_32",
+          "avr_loss": 0.319,
+          "cur_loss": 0.315,
+          "delta_loss": -0.005,
+          "badge": "SOUS-CONVERGÉ (À PROLONGER)",
+          "note": "2.01 vrais ep (852 b/ep, 920 reg) -> +3 ep"
+        },
+        {
+          "exists": true,
+          "filename": "flux_lora_file_fowx_network128_rank32_bf16.safetensors",
+          "path": "/home/nzonzi/ComfyUI/models/loras/DARK/flux_lora_file_fowx_network128_rank32_bf16.safetensors",
+          "size_mb": 292.3,
+          "sha256_head": "f2af91998c",
+          "ss_steps": 690,
+          "ss_epoch": 5,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 2.2062,
+          "lora_up_rms": 0.000967,
+          "step": 690,
+          "variant": "DARK_final",
+          "avr_loss": 0.276,
+          "cur_loss": 0.272,
+          "delta_loss": -0.043,
+          "badge": "★ VALIDÉ OK (FINAL=690)",
+          "note": "Copie exacte de step00690 (+1 ep -> 828)"
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 1,
+          "avr_loss": 0.342,
+          "cur_loss": 0.355
+        },
+        {
+          "step": 50,
+          "avr_loss": 0.318,
+          "cur_loss": 0.31
+        },
+        {
+          "step": 100,
+          "avr_loss": 0.298,
+          "cur_loss": 0.289
+        },
+        {
+          "step": 200,
+          "avr_loss": 0.288,
+          "cur_loss": 0.278
+        },
+        {
+          "step": 344,
+          "avr_loss": 0.2845,
+          "cur_loss": 0.279
+        },
+        {
+          "step": 428,
+          "avr_loss": 0.326,
+          "cur_loss": 0.318
+        },
+        {
+          "step": 500,
+          "avr_loss": 0.298,
+          "cur_loss": 0.292
+        },
+        {
+          "step": 690,
+          "avr_loss": 0.276,
+          "cur_loss": 0.272
+        },
+        {
+          "step": 856,
+          "avr_loss": 0.329,
+          "cur_loss": 0.334
+        },
+        {
+          "step": 1284,
+          "avr_loss": 0.324,
+          "cur_loss": 0.321
+        },
+        {
+          "step": 1712,
+          "avr_loss": 0.319,
+          "cur_loss": 0.315
+        }
+      ]
+    },
+    "delphine_flux_sel2": {
+      "title": "Delphine Selection_2 — FLUX.1-dev LoRA (Rank 32 / Alpha 128)",
+      "trigger": "dcsrn",
+      "base_model_real": "flux1-dev-fp8.safetensors / flux1-dev-Q8_0.gguf (VAE: FLUX1/ae.safetensors)",
+      "recommended_step": 1550,
+      "secondary_step": 1800,
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step00050.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step00050.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "35a4f704bd",
+          "ss_steps": 50,
+          "ss_epoch": 2,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 0.5589,
+          "lora_up_rms": 0.000245,
+          "step": 50,
+          "avr_loss": 0.342,
+          "cur_loss": 0.351,
+          "delta_loss": 0.0,
+          "badge": "EARLY / UNDERFIT",
+          "note": "Identité faible (L2=0.53)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step00300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step00300.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "da057efaf7",
+          "ss_steps": 300,
+          "ss_epoch": 3,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 3.3374,
+          "lora_up_rms": 0.001462,
+          "step": 300,
+          "avr_loss": 0.324,
+          "cur_loss": 0.318,
+          "delta_loss": -0.018,
+          "badge": "CONVERGING",
+          "note": "Apprentissage structure visage (L2=3.09)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step00550.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step00550.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "6d87aec751",
+          "ss_steps": 550,
+          "ss_epoch": 4,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 4.8418,
+          "lora_up_rms": 0.002121,
+          "step": 550,
+          "avr_loss": 0.315,
+          "cur_loss": 0.309,
+          "delta_loss": -0.009,
+          "badge": "CONVERGING",
+          "note": "Gain net identité dcsrn (L2=4.47)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step00800.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step00800.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "f86cb3d1ba",
+          "ss_steps": 800,
+          "ss_epoch": 5,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 5.4925,
+          "lora_up_rms": 0.002406,
+          "step": 800,
+          "avr_loss": 0.308,
+          "cur_loss": 0.298,
+          "delta_loss": -0.007,
+          "badge": "GOOD GENERALIZATION",
+          "note": "Bon équilibre souplesse/style (L2=5.07)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step01050.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step01050.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "f4ed6703be",
+          "ss_steps": 1050,
+          "ss_epoch": 6,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 5.7033,
+          "lora_up_rms": 0.002499,
+          "step": 1050,
+          "avr_loss": 0.304,
+          "cur_loss": 0.311,
+          "delta_loss": -0.004,
+          "badge": "OPTIMAL PLATEAU",
+          "note": "Début du plateau spectral (L2=5.26)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step01300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step01300.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "a98f59010e",
+          "ss_steps": 1300,
+          "ss_epoch": 7,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 5.7311,
+          "lora_up_rms": 0.002511,
+          "step": 1300,
+          "avr_loss": 0.3015,
+          "cur_loss": 0.295,
+          "delta_loss": -0.0025,
+          "badge": "OPTIMAL PLATEAU",
+          "note": "Stabilisation des poids (L2=5.281)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step01550.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step01550.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "31e6414264",
+          "ss_steps": 1550,
+          "ss_epoch": 8,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 5.7303,
+          "lora_up_rms": 0.00251,
+          "step": 1550,
+          "avr_loss": 0.2995,
+          "cur_loss": 0.302,
+          "delta_loss": -0.002,
+          "badge": "★ SWEET SPOT",
+          "note": "Meilleur ratio identité/flexibilité prompt (L2=5.280)"
+        },
+        {
+          "exists": true,
+          "filename": "flux_file_delphine_sel2_32network128_rank32_bf16-step01800.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/flux_file_delphine_sel2_32network128_rank32_bf16-step01800.safetensors",
+          "size_mb": 292.2,
+          "sha256_head": "bc0c463f23",
+          "ss_steps": 1800,
+          "ss_epoch": 9,
+          "ss_lr": "0.0002",
+          "ss_optimizer": "transformers.optimization.Adafactor(relative_step=False,scale_parameter=False,warmup_init=False,clip_threshold=1.0)",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "128.0",
+          "ss_base_model": "flux1",
+          "lora_up_l2": 5.7317,
+          "lora_up_rms": 0.002511,
+          "step": 1800,
+          "avr_loss": 0.299,
+          "cur_loss": 0.304,
+          "delta_loss": -0.0005,
+          "badge": "SATURATED / RIGID",
+          "note": "Poids figés (ΔL2=0.0007), légère rigidité"
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 50,
+          "avr_loss": 0.342,
+          "cur_loss": 0.351,
+          "l2": 0.5589
+        },
+        {
+          "step": 300,
+          "avr_loss": 0.324,
+          "cur_loss": 0.318,
+          "l2": 3.3374
+        },
+        {
+          "step": 550,
+          "avr_loss": 0.315,
+          "cur_loss": 0.309,
+          "l2": 4.8418
+        },
+        {
+          "step": 800,
+          "avr_loss": 0.308,
+          "cur_loss": 0.298,
+          "l2": 5.4925
+        },
+        {
+          "step": 1050,
+          "avr_loss": 0.304,
+          "cur_loss": 0.311,
+          "l2": 5.7033
+        },
+        {
+          "step": 1300,
+          "avr_loss": 0.3015,
+          "cur_loss": 0.295,
+          "l2": 5.7311
+        },
+        {
+          "step": 1550,
+          "avr_loss": 0.2995,
+          "cur_loss": 0.302,
+          "l2": 5.7303
+        },
+        {
+          "step": 1800,
+          "avr_loss": 0.299,
+          "cur_loss": 0.304,
+          "l2": 5.7317
+        }
+      ]
+    },
+    "delphine_sdxl_sel2": {
+      "title": "Delphine Selection_2 — SDXL 1.0 Base LoRA (Rank 32 / Alpha 16)",
+      "trigger": "dcsrn",
+      "base_model_real": "SDXL/sd_xl_base_1.0.safetensors (VAE: sdxl_vae.safetensors)",
+      "recommended_step": 900,
+      "secondary_step": 1200,
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "delphine_sdxl_sel2-step00000300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sdxl_sel2-step00000300.safetensors",
+          "size_mb": 193.3,
+          "sha256_head": "a815312672",
+          "ss_steps": 300,
+          "ss_epoch": 0,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 0.7883,
+          "lora_up_rms": 0.00075,
+          "step": 300,
+          "avr_loss": 0.097994,
+          "cur_loss": 0.010618,
+          "sma50_loss": 0.072208,
+          "delta_loss": 0.0,
+          "badge": "EARLY / UNDERFIT",
+          "note": "avr_loss=0.0980 | L2=0.79"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sdxl_sel2-step00000600.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sdxl_sel2-step00000600.safetensors",
+          "size_mb": 193.3,
+          "sha256_head": "a97d9c1669",
+          "ss_steps": 600,
+          "ss_epoch": 1,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 0.9271,
+          "lora_up_rms": 0.000882,
+          "step": 600,
+          "avr_loss": 0.090308,
+          "cur_loss": 0.296461,
+          "sma50_loss": 0.063846,
+          "delta_loss": -0.00769,
+          "badge": "CONVERGING",
+          "note": "avr_loss=0.0903 | L2=0.93"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sdxl_sel2-step00000900.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sdxl_sel2-step00000900.safetensors",
+          "size_mb": 193.3,
+          "sha256_head": "8e3d3f3818",
+          "ss_steps": 900,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 0.9839,
+          "lora_up_rms": 0.000936,
+          "step": 900,
+          "avr_loss": 0.088539,
+          "cur_loss": 0.034129,
+          "sma50_loss": 0.114449,
+          "delta_loss": -0.00177,
+          "badge": "★ SWEET SPOT",
+          "note": "Creux de loss 0.076-0.088 + identité nette"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sdxl_sel2-step00001200.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sdxl_sel2-step00001200.safetensors",
+          "size_mb": 193.3,
+          "sha256_head": "3c3c786c50",
+          "ss_steps": 1200,
+          "ss_epoch": 3,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sdxl_base_v1-0",
+          "lora_up_l2": 1.0164,
+          "lora_up_rms": 0.000967,
+          "step": 1200,
+          "avr_loss": 0.08942,
+          "cur_loss": 0.237375,
+          "sma50_loss": 0.090482,
+          "delta_loss": 0.00088,
+          "badge": "OPTIMAL PLATEAU",
+          "note": "avr_loss=0.0894 | L2=1.02"
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 1,
+          "avr_loss": 0.21653,
+          "cur_loss": 0.21653
+        },
+        {
+          "step": 15,
+          "avr_loss": 0.09555,
+          "cur_loss": 0.04228
+        },
+        {
+          "step": 30,
+          "avr_loss": 0.11727,
+          "cur_loss": 0.13477
+        },
+        {
+          "step": 45,
+          "avr_loss": 0.10257,
+          "cur_loss": 0.00881
+        },
+        {
+          "step": 60,
+          "avr_loss": 0.10506,
+          "cur_loss": 0.07433
+        },
+        {
+          "step": 75,
+          "avr_loss": 0.09742,
+          "cur_loss": 0.01439
+        },
+        {
+          "step": 90,
+          "avr_loss": 0.09951,
+          "cur_loss": 0.05
+        },
+        {
+          "step": 105,
+          "avr_loss": 0.10063,
+          "cur_loss": 0.22104
+        },
+        {
+          "step": 120,
+          "avr_loss": 0.09832,
+          "cur_loss": 0.11605
+        },
+        {
+          "step": 135,
+          "avr_loss": 0.09927,
+          "cur_loss": 0.01165
+        },
+        {
+          "step": 150,
+          "avr_loss": 0.09885,
+          "cur_loss": 0.1511
+        },
+        {
+          "step": 165,
+          "avr_loss": 0.10046,
+          "cur_loss": 0.11539
+        },
+        {
+          "step": 180,
+          "avr_loss": 0.10187,
+          "cur_loss": 0.10325
+        },
+        {
+          "step": 195,
+          "avr_loss": 0.10332,
+          "cur_loss": 0.00509
+        },
+        {
+          "step": 210,
+          "avr_loss": 0.10336,
+          "cur_loss": 0.2249
+        },
+        {
+          "step": 225,
+          "avr_loss": 0.10393,
+          "cur_loss": 0.04437
+        },
+        {
+          "step": 240,
+          "avr_loss": 0.10401,
+          "cur_loss": 0.00599
+        },
+        {
+          "step": 255,
+          "avr_loss": 0.10336,
+          "cur_loss": 0.14997
+        },
+        {
+          "step": 270,
+          "avr_loss": 0.10124,
+          "cur_loss": 0.03362
+        },
+        {
+          "step": 285,
+          "avr_loss": 0.09958,
+          "cur_loss": 0.00611
+        },
+        {
+          "step": 300,
+          "avr_loss": 0.09799,
+          "cur_loss": 0.01062
+        },
+        {
+          "step": 315,
+          "avr_loss": 0.09782,
+          "cur_loss": 0.03448
+        },
+        {
+          "step": 330,
+          "avr_loss": 0.09785,
+          "cur_loss": 0.004
+        },
+        {
+          "step": 345,
+          "avr_loss": 0.09561,
+          "cur_loss": 0.02506
+        },
+        {
+          "step": 360,
+          "avr_loss": 0.09386,
+          "cur_loss": 0.03671
+        },
+        {
+          "step": 375,
+          "avr_loss": 0.0948,
+          "cur_loss": 0.01481
+        },
+        {
+          "step": 390,
+          "avr_loss": 0.09601,
+          "cur_loss": 0.12289
+        },
+        {
+          "step": 405,
+          "avr_loss": 0.09591,
+          "cur_loss": 0.1453
+        },
+        {
+          "step": 420,
+          "avr_loss": 0.09706,
+          "cur_loss": 0.13121
+        },
+        {
+          "step": 435,
+          "avr_loss": 0.09628,
+          "cur_loss": 0.01898
+        },
+        {
+          "step": 450,
+          "avr_loss": 0.09706,
+          "cur_loss": 0.12726
+        },
+        {
+          "step": 465,
+          "avr_loss": 0.09822,
+          "cur_loss": 0.02025
+        },
+        {
+          "step": 480,
+          "avr_loss": 0.09829,
+          "cur_loss": 0.23443
+        },
+        {
+          "step": 495,
+          "avr_loss": 0.09584,
+          "cur_loss": 0.09624
+        },
+        {
+          "step": 510,
+          "avr_loss": 0.09507,
+          "cur_loss": 0.02726
+        },
+        {
+          "step": 525,
+          "avr_loss": 0.0933,
+          "cur_loss": 0.17946
+        },
+        {
+          "step": 540,
+          "avr_loss": 0.09191,
+          "cur_loss": 0.00869
+        },
+        {
+          "step": 555,
+          "avr_loss": 0.09116,
+          "cur_loss": 0.01257
+        },
+        {
+          "step": 570,
+          "avr_loss": 0.09041,
+          "cur_loss": 0.14006
+        },
+        {
+          "step": 585,
+          "avr_loss": 0.09021,
+          "cur_loss": 0.12455
+        },
+        {
+          "step": 600,
+          "avr_loss": 0.09031,
+          "cur_loss": 0.29646
+        },
+        {
+          "step": 615,
+          "avr_loss": 0.08799,
+          "cur_loss": 0.01128
+        },
+        {
+          "step": 630,
+          "avr_loss": 0.08647,
+          "cur_loss": 0.03241
+        },
+        {
+          "step": 645,
+          "avr_loss": 0.08748,
+          "cur_loss": 0.06955
+        },
+        {
+          "step": 660,
+          "avr_loss": 0.08939,
+          "cur_loss": 0.03289
+        },
+        {
+          "step": 675,
+          "avr_loss": 0.08951,
+          "cur_loss": 0.2382
+        },
+        {
+          "step": 690,
+          "avr_loss": 0.08872,
+          "cur_loss": 0.21972
+        },
+        {
+          "step": 705,
+          "avr_loss": 0.0853,
+          "cur_loss": 0.01223
+        },
+        {
+          "step": 720,
+          "avr_loss": 0.08286,
+          "cur_loss": 0.04749
+        },
+        {
+          "step": 735,
+          "avr_loss": 0.08281,
+          "cur_loss": 0.00308
+        },
+        {
+          "step": 750,
+          "avr_loss": 0.07996,
+          "cur_loss": 0.00261
+        },
+        {
+          "step": 765,
+          "avr_loss": 0.07867,
+          "cur_loss": 0.0227
+        },
+        {
+          "step": 780,
+          "avr_loss": 0.07639,
+          "cur_loss": 0.00333
+        },
+        {
+          "step": 795,
+          "avr_loss": 0.07577,
+          "cur_loss": 0.0221
+        },
+        {
+          "step": 810,
+          "avr_loss": 0.07691,
+          "cur_loss": 0.00573
+        },
+        {
+          "step": 825,
+          "avr_loss": 0.07826,
+          "cur_loss": 0.00244
+        },
+        {
+          "step": 840,
+          "avr_loss": 0.0778,
+          "cur_loss": 0.06394
+        },
+        {
+          "step": 855,
+          "avr_loss": 0.08003,
+          "cur_loss": 0.11367
+        },
+        {
+          "step": 870,
+          "avr_loss": 0.08615,
+          "cur_loss": 0.27392
+        },
+        {
+          "step": 885,
+          "avr_loss": 0.08831,
+          "cur_loss": 0.19268
+        },
+        {
+          "step": 900,
+          "avr_loss": 0.08854,
+          "cur_loss": 0.03413
+        },
+        {
+          "step": 915,
+          "avr_loss": 0.08976,
+          "cur_loss": 0.15307
+        },
+        {
+          "step": 930,
+          "avr_loss": 0.09054,
+          "cur_loss": 0.06503
+        },
+        {
+          "step": 945,
+          "avr_loss": 0.08953,
+          "cur_loss": 0.00293
+        },
+        {
+          "step": 960,
+          "avr_loss": 0.088,
+          "cur_loss": 0.0544
+        },
+        {
+          "step": 975,
+          "avr_loss": 0.08899,
+          "cur_loss": 0.05699
+        },
+        {
+          "step": 990,
+          "avr_loss": 0.08679,
+          "cur_loss": 0.01139
+        },
+        {
+          "step": 1005,
+          "avr_loss": 0.08981,
+          "cur_loss": 0.02311
+        },
+        {
+          "step": 1020,
+          "avr_loss": 0.09154,
+          "cur_loss": 0.02967
+        },
+        {
+          "step": 1035,
+          "avr_loss": 0.09448,
+          "cur_loss": 0.18257
+        },
+        {
+          "step": 1050,
+          "avr_loss": 0.09432,
+          "cur_loss": 0.29225
+        },
+        {
+          "step": 1065,
+          "avr_loss": 0.09509,
+          "cur_loss": 0.02486
+        },
+        {
+          "step": 1080,
+          "avr_loss": 0.0959,
+          "cur_loss": 0.01731
+        },
+        {
+          "step": 1095,
+          "avr_loss": 0.09464,
+          "cur_loss": 0.00361
+        },
+        {
+          "step": 1110,
+          "avr_loss": 0.09514,
+          "cur_loss": 0.18064
+        },
+        {
+          "step": 1125,
+          "avr_loss": 0.09526,
+          "cur_loss": 0.01254
+        },
+        {
+          "step": 1140,
+          "avr_loss": 0.09316,
+          "cur_loss": 0.02643
+        },
+        {
+          "step": 1155,
+          "avr_loss": 0.09171,
+          "cur_loss": 0.0072
+        },
+        {
+          "step": 1170,
+          "avr_loss": 0.08888,
+          "cur_loss": 0.00474
+        },
+        {
+          "step": 1185,
+          "avr_loss": 0.08988,
+          "cur_loss": 0.03669
+        },
+        {
+          "step": 1200,
+          "avr_loss": 0.08942,
+          "cur_loss": 0.23738
+        }
+      ]
+    },
+    "delphine_sd15_sel2": {
+      "title": "Delphine Selection_2 — SD 1.5 LoRA (Rank 32 / Alpha 16)",
+      "trigger": "dcsrn",
+      "base_model_real": "SD1.5/v1-5-pruned-emaonly.safetensors / DreamShaper_8",
+      "recommended_step": 600,
+      "secondary_step": 1200,
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "delphine_sd15_sel2-step00000300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sd15_sel2-step00000300.safetensors",
+          "size_mb": 31.6,
+          "sha256_head": "9867c06112",
+          "ss_steps": 300,
+          "ss_epoch": 0,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 0.8633,
+          "lora_up_rms": 0.000821,
+          "step": 300,
+          "avr_loss": 0.088018,
+          "cur_loss": 0.044455,
+          "sma50_loss": 0.068832,
+          "delta_loss": 0.0,
+          "badge": "CONVERGING",
+          "note": "avr_loss=0.0880 | L2=0.86"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sd15_sel2-step00000600.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sd15_sel2-step00000600.safetensors",
+          "size_mb": 31.6,
+          "sha256_head": "636933acec",
+          "ss_steps": 600,
+          "ss_epoch": 1,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.0405,
+          "lora_up_rms": 0.000989,
+          "step": 600,
+          "avr_loss": 0.080544,
+          "cur_loss": 0.098193,
+          "sma50_loss": 0.101603,
+          "delta_loss": -0.00747,
+          "badge": "★ SWEET SPOT",
+          "note": "Minimum loss/average=0.0805"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sd15_sel2-step00000900.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sd15_sel2-step00000900.safetensors",
+          "size_mb": 31.6,
+          "sha256_head": "fd3a8dcfbf",
+          "ss_steps": 900,
+          "ss_epoch": 2,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.1041,
+          "lora_up_rms": 0.00105,
+          "step": 900,
+          "avr_loss": 0.084124,
+          "cur_loss": 0.152575,
+          "sma50_loss": 0.083853,
+          "delta_loss": 0.00358,
+          "badge": "OPTIMAL PLATEAU",
+          "note": "avr_loss=0.0841 | L2=1.10"
+        },
+        {
+          "exists": true,
+          "filename": "delphine_sd15_sel2-step00001200.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/delphine_sd15_sel2-step00001200.safetensors",
+          "size_mb": 31.6,
+          "sha256_head": "50e0c368e8",
+          "ss_steps": 1200,
+          "ss_epoch": 3,
+          "ss_lr": "0.0001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "32",
+          "ss_network_alpha": "16",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.1794,
+          "lora_up_rms": 0.001121,
+          "step": 1200,
+          "avr_loss": 0.086462,
+          "cur_loss": 0.026263,
+          "sma50_loss": 0.073468,
+          "delta_loss": 0.00234,
+          "badge": "SLIGHT OVERFIT",
+          "note": "avr_loss=0.0865 | L2=1.18"
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 1,
+          "avr_loss": 0.0042,
+          "cur_loss": 0.0042
+        },
+        {
+          "step": 15,
+          "avr_loss": 0.10869,
+          "cur_loss": 0.10239
+        },
+        {
+          "step": 30,
+          "avr_loss": 0.0926,
+          "cur_loss": 0.00572
+        },
+        {
+          "step": 45,
+          "avr_loss": 0.08526,
+          "cur_loss": 0.07906
+        },
+        {
+          "step": 60,
+          "avr_loss": 0.07666,
+          "cur_loss": 0.02955
+        },
+        {
+          "step": 75,
+          "avr_loss": 0.07572,
+          "cur_loss": 0.15632
+        },
+        {
+          "step": 90,
+          "avr_loss": 0.08065,
+          "cur_loss": 0.06214
+        },
+        {
+          "step": 105,
+          "avr_loss": 0.08647,
+          "cur_loss": 0.24751
+        },
+        {
+          "step": 120,
+          "avr_loss": 0.09106,
+          "cur_loss": 0.21019
+        },
+        {
+          "step": 135,
+          "avr_loss": 0.09313,
+          "cur_loss": 0.1804
+        },
+        {
+          "step": 150,
+          "avr_loss": 0.09018,
+          "cur_loss": 0.16962
+        },
+        {
+          "step": 165,
+          "avr_loss": 0.08802,
+          "cur_loss": 0.00538
+        },
+        {
+          "step": 180,
+          "avr_loss": 0.0902,
+          "cur_loss": 0.24852
+        },
+        {
+          "step": 195,
+          "avr_loss": 0.09209,
+          "cur_loss": 0.16672
+        },
+        {
+          "step": 210,
+          "avr_loss": 0.09205,
+          "cur_loss": 0.03433
+        },
+        {
+          "step": 225,
+          "avr_loss": 0.09304,
+          "cur_loss": 0.05062
+        },
+        {
+          "step": 240,
+          "avr_loss": 0.09211,
+          "cur_loss": 0.02019
+        },
+        {
+          "step": 255,
+          "avr_loss": 0.09043,
+          "cur_loss": 0.01242
+        },
+        {
+          "step": 270,
+          "avr_loss": 0.08892,
+          "cur_loss": 0.03358
+        },
+        {
+          "step": 285,
+          "avr_loss": 0.08814,
+          "cur_loss": 0.09264
+        },
+        {
+          "step": 300,
+          "avr_loss": 0.08802,
+          "cur_loss": 0.04446
+        },
+        {
+          "step": 315,
+          "avr_loss": 0.08614,
+          "cur_loss": 0.05688
+        },
+        {
+          "step": 330,
+          "avr_loss": 0.0866,
+          "cur_loss": 0.17078
+        },
+        {
+          "step": 345,
+          "avr_loss": 0.08743,
+          "cur_loss": 0.04195
+        },
+        {
+          "step": 360,
+          "avr_loss": 0.08857,
+          "cur_loss": 0.00931
+        },
+        {
+          "step": 375,
+          "avr_loss": 0.0897,
+          "cur_loss": 0.04951
+        },
+        {
+          "step": 390,
+          "avr_loss": 0.08857,
+          "cur_loss": 0.00574
+        },
+        {
+          "step": 405,
+          "avr_loss": 0.08657,
+          "cur_loss": 0.01565
+        },
+        {
+          "step": 420,
+          "avr_loss": 0.08294,
+          "cur_loss": 0.00277
+        },
+        {
+          "step": 435,
+          "avr_loss": 0.08095,
+          "cur_loss": 0.05827
+        },
+        {
+          "step": 450,
+          "avr_loss": 0.08341,
+          "cur_loss": 0.2082
+        },
+        {
+          "step": 465,
+          "avr_loss": 0.0834,
+          "cur_loss": 0.10169
+        },
+        {
+          "step": 480,
+          "avr_loss": 0.08354,
+          "cur_loss": 0.04438
+        },
+        {
+          "step": 495,
+          "avr_loss": 0.08029,
+          "cur_loss": 0.09276
+        },
+        {
+          "step": 510,
+          "avr_loss": 0.07897,
+          "cur_loss": 0.0486
+        },
+        {
+          "step": 525,
+          "avr_loss": 0.07742,
+          "cur_loss": 0.00741
+        },
+        {
+          "step": 540,
+          "avr_loss": 0.07543,
+          "cur_loss": 0.02864
+        },
+        {
+          "step": 555,
+          "avr_loss": 0.07654,
+          "cur_loss": 0.10167
+        },
+        {
+          "step": 570,
+          "avr_loss": 0.07841,
+          "cur_loss": 0.16725
+        },
+        {
+          "step": 585,
+          "avr_loss": 0.08105,
+          "cur_loss": 0.10696
+        },
+        {
+          "step": 600,
+          "avr_loss": 0.08054,
+          "cur_loss": 0.09819
+        },
+        {
+          "step": 615,
+          "avr_loss": 0.08192,
+          "cur_loss": 0.07803
+        },
+        {
+          "step": 630,
+          "avr_loss": 0.08133,
+          "cur_loss": 0.0114
+        },
+        {
+          "step": 645,
+          "avr_loss": 0.08052,
+          "cur_loss": 0.00361
+        },
+        {
+          "step": 660,
+          "avr_loss": 0.0806,
+          "cur_loss": 0.00464
+        },
+        {
+          "step": 675,
+          "avr_loss": 0.08147,
+          "cur_loss": 0.25917
+        },
+        {
+          "step": 690,
+          "avr_loss": 0.07988,
+          "cur_loss": 0.21169
+        },
+        {
+          "step": 705,
+          "avr_loss": 0.08089,
+          "cur_loss": 0.10748
+        },
+        {
+          "step": 720,
+          "avr_loss": 0.08315,
+          "cur_loss": 0.01308
+        },
+        {
+          "step": 735,
+          "avr_loss": 0.08318,
+          "cur_loss": 0.07371
+        },
+        {
+          "step": 750,
+          "avr_loss": 0.08252,
+          "cur_loss": 0.0468
+        },
+        {
+          "step": 765,
+          "avr_loss": 0.08174,
+          "cur_loss": 0.00618
+        },
+        {
+          "step": 780,
+          "avr_loss": 0.08098,
+          "cur_loss": 0.02203
+        },
+        {
+          "step": 795,
+          "avr_loss": 0.08167,
+          "cur_loss": 0.07586
+        },
+        {
+          "step": 810,
+          "avr_loss": 0.08323,
+          "cur_loss": 0.15779
+        },
+        {
+          "step": 825,
+          "avr_loss": 0.08436,
+          "cur_loss": 0.02264
+        },
+        {
+          "step": 840,
+          "avr_loss": 0.08693,
+          "cur_loss": 0.21261
+        },
+        {
+          "step": 855,
+          "avr_loss": 0.08595,
+          "cur_loss": 0.04781
+        },
+        {
+          "step": 870,
+          "avr_loss": 0.08663,
+          "cur_loss": 0.01153
+        },
+        {
+          "step": 885,
+          "avr_loss": 0.08286,
+          "cur_loss": 0.00979
+        },
+        {
+          "step": 900,
+          "avr_loss": 0.08412,
+          "cur_loss": 0.15257
+        },
+        {
+          "step": 915,
+          "avr_loss": 0.0839,
+          "cur_loss": 0.08203
+        },
+        {
+          "step": 930,
+          "avr_loss": 0.08656,
+          "cur_loss": 0.26082
+        },
+        {
+          "step": 945,
+          "avr_loss": 0.08771,
+          "cur_loss": 0.01363
+        },
+        {
+          "step": 960,
+          "avr_loss": 0.08772,
+          "cur_loss": 0.03274
+        },
+        {
+          "step": 975,
+          "avr_loss": 0.08825,
+          "cur_loss": 0.03794
+        },
+        {
+          "step": 990,
+          "avr_loss": 0.08934,
+          "cur_loss": 0.1196
+        },
+        {
+          "step": 1005,
+          "avr_loss": 0.08995,
+          "cur_loss": 0.21178
+        },
+        {
+          "step": 1020,
+          "avr_loss": 0.08834,
+          "cur_loss": 0.1168
+        },
+        {
+          "step": 1035,
+          "avr_loss": 0.08868,
+          "cur_loss": 0.05705
+        },
+        {
+          "step": 1050,
+          "avr_loss": 0.08849,
+          "cur_loss": 0.01235
+        },
+        {
+          "step": 1065,
+          "avr_loss": 0.08787,
+          "cur_loss": 0.11429
+        },
+        {
+          "step": 1080,
+          "avr_loss": 0.08979,
+          "cur_loss": 0.32909
+        },
+        {
+          "step": 1095,
+          "avr_loss": 0.09063,
+          "cur_loss": 0.05991
+        },
+        {
+          "step": 1110,
+          "avr_loss": 0.08782,
+          "cur_loss": 0.00931
+        },
+        {
+          "step": 1125,
+          "avr_loss": 0.08868,
+          "cur_loss": 0.05659
+        },
+        {
+          "step": 1140,
+          "avr_loss": 0.08836,
+          "cur_loss": 0.10905
+        },
+        {
+          "step": 1155,
+          "avr_loss": 0.08745,
+          "cur_loss": 0.03603
+        },
+        {
+          "step": 1170,
+          "avr_loss": 0.08553,
+          "cur_loss": 0.02718
+        },
+        {
+          "step": 1185,
+          "avr_loss": 0.08567,
+          "cur_loss": 0.16716
+        },
+        {
+          "step": 1200,
+          "avr_loss": 0.08646,
+          "cur_loss": 0.02626
+        }
+      ]
+    },
+    "nemeris_sd15": {
+      "title": "Nemeris — SD 1.5 LoRA (Rank 72 / Alpha 128, token n3m3riys)",
+      "trigger": "n3m3riys",
+      "base_model_real": "SD1.5/DreamShaper_8_pruned.safetensors (Baked VAE)",
+      "recommended_step": 2500,
+      "secondary_step": 3000,
+      "checkpoints": [
+        {
+          "exists": true,
+          "filename": "nemeris_-step00000300.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00000300.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "f486c38539",
+          "ss_steps": 300,
+          "ss_epoch": 0,
+          "ss_lr": "1e-05",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.1636,
+          "lora_up_rms": 0.000952,
+          "step": 300,
+          "run_tag": "run1_lr1e-5",
+          "avr_loss": 0.08542,
+          "cur_loss": 0.163667,
+          "sma50_loss": 0.110512,
+          "delta_loss": 0.0,
+          "badge": "EARLY / UNDERFIT",
+          "note": "Début d'apprentissage (run1_lr1e-5)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00000800.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00000800.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "5620de31a2",
+          "ss_steps": 800,
+          "ss_epoch": 2,
+          "ss_lr": "1e-05",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.2798,
+          "lora_up_rms": 0.001047,
+          "step": 800,
+          "run_tag": "run1_lr1e-5",
+          "avr_loss": 0.07299,
+          "cur_loss": 0.016859,
+          "sma50_loss": 0.067883,
+          "delta_loss": -0.01243,
+          "badge": "CONVERGING",
+          "note": "Transition run1_lr1e-5 (L2=1.28)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00000900.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00000900.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "6fda84f2a7",
+          "ss_steps": 900,
+          "ss_epoch": 2,
+          "ss_lr": "1e-05",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.3726,
+          "lora_up_rms": 0.001123,
+          "step": 900,
+          "run_tag": "run1_lr1e-5",
+          "avr_loss": 0.072856,
+          "cur_loss": 0.23151,
+          "sma50_loss": 0.072648,
+          "delta_loss": -0.00013,
+          "badge": "MIN LOSS (R1)",
+          "note": "Min loss Run1 (0.0729) lr=1e-5"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00001100.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00001100.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "7395cd51cc",
+          "ss_steps": 1100,
+          "ss_epoch": 3,
+          "ss_lr": "1e-05",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.4599,
+          "lora_up_rms": 0.001195,
+          "step": 1100,
+          "run_tag": "run1_lr1e-5",
+          "avr_loss": 0.080581,
+          "cur_loss": 0.023782,
+          "sma50_loss": 0.090662,
+          "delta_loss": 0.00772,
+          "badge": "CONVERGING",
+          "note": "Transition run1_lr1e-5 (L2=1.46)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00001200.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00001200.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "95d12231d8",
+          "ss_steps": 1200,
+          "ss_epoch": 3,
+          "ss_lr": "1e-05",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.4723,
+          "lora_up_rms": 0.001205,
+          "step": 1200,
+          "run_tag": "run1_lr1e-5",
+          "avr_loss": 0.087204,
+          "cur_loss": 0.022969,
+          "sma50_loss": 0.09825,
+          "delta_loss": 0.00662,
+          "badge": "CONVERGING",
+          "note": "Transition run1_lr1e-5 (L2=1.47)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00001500.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00001500.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "31f1bec577",
+          "ss_steps": 1500,
+          "ss_epoch": 2,
+          "ss_lr": "0.001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.2777,
+          "lora_up_rms": 0.001046,
+          "step": 1500,
+          "run_tag": "run2_lr1e-3",
+          "avr_loss": 0.085085,
+          "cur_loss": 0.030292,
+          "sma50_loss": 0.081105,
+          "delta_loss": -0.00212,
+          "badge": "CONVERGING",
+          "note": "Transition run2_lr1e-3 (L2=1.28)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00002000.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00002000.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "6b21571337",
+          "ss_steps": 2000,
+          "ss_epoch": 3,
+          "ss_lr": "0.001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.5463,
+          "lora_up_rms": 0.001266,
+          "step": 2000,
+          "run_tag": "run2_lr1e-3",
+          "avr_loss": 0.083976,
+          "cur_loss": 0.022862,
+          "sma50_loss": 0.086951,
+          "delta_loss": -0.00111,
+          "badge": "CONVERGING",
+          "note": "Transition run2_lr1e-3 (L2=1.55)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00002500.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00002500.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "50036acbaa",
+          "ss_steps": 2500,
+          "ss_epoch": 3,
+          "ss_lr": "0.001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.7334,
+          "lora_up_rms": 0.001419,
+          "step": 2500,
+          "run_tag": "run2_lr1e-3",
+          "avr_loss": 0.083555,
+          "cur_loss": 0.104969,
+          "sma50_loss": 0.0795,
+          "delta_loss": -0.00042,
+          "badge": "★ SWEET SPOT",
+          "note": "Meilleure convergence Run2 (avr=0.0836, L2=1.62)"
+        },
+        {
+          "exists": true,
+          "filename": "nemeris_-step00003000.safetensors",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00003000.safetensors",
+          "size_mb": 81.1,
+          "sha256_head": "7835741280",
+          "ss_steps": 3000,
+          "ss_epoch": 4,
+          "ss_lr": "0.001",
+          "ss_optimizer": "bitsandbytes.optim.adamw.AdamW8bit(weight_decay=0.05,betas=(0.9, 0.98))",
+          "ss_network_dim": "72",
+          "ss_network_alpha": "128",
+          "ss_base_model": "sd_v1",
+          "lora_up_l2": 1.7642,
+          "lora_up_rms": 0.001444,
+          "step": 3000,
+          "run_tag": "run2_lr1e-3",
+          "avr_loss": 0.081805,
+          "cur_loss": 0.136639,
+          "sma50_loss": 0.080356,
+          "delta_loss": -0.00175,
+          "badge": "FINAL VALIDATED",
+          "note": "8/8 prompts validés (avr=0.0818, L2=1.65)"
+        }
+      ],
+      "loss_curve": [
+        {
+          "step": 1,
+          "avr_loss": 0.10276,
+          "cur_loss": 0.10276
+        },
+        {
+          "step": 25,
+          "avr_loss": 0.10033,
+          "cur_loss": 0.18588
+        },
+        {
+          "step": 50,
+          "avr_loss": 0.09238,
+          "cur_loss": 0.02736
+        },
+        {
+          "step": 75,
+          "avr_loss": 0.09072,
+          "cur_loss": 0.19006
+        },
+        {
+          "step": 100,
+          "avr_loss": 0.08445,
+          "cur_loss": 0.0401
+        },
+        {
+          "step": 125,
+          "avr_loss": 0.07985,
+          "cur_loss": 0.05448
+        },
+        {
+          "step": 150,
+          "avr_loss": 0.08257,
+          "cur_loss": 0.01107
+        },
+        {
+          "step": 175,
+          "avr_loss": 0.08538,
+          "cur_loss": 0.02325
+        },
+        {
+          "step": 200,
+          "avr_loss": 0.08832,
+          "cur_loss": 0.16653
+        },
+        {
+          "step": 225,
+          "avr_loss": 0.0888,
+          "cur_loss": 0.21134
+        },
+        {
+          "step": 250,
+          "avr_loss": 0.08814,
+          "cur_loss": 0.03243
+        },
+        {
+          "step": 275,
+          "avr_loss": 0.08963,
+          "cur_loss": 0.01029
+        },
+        {
+          "step": 300,
+          "avr_loss": 0.09187,
+          "cur_loss": 0.28015
+        },
+        {
+          "step": 325,
+          "avr_loss": 0.09359,
+          "cur_loss": 0.27373
+        },
+        {
+          "step": 350,
+          "avr_loss": 0.09282,
+          "cur_loss": 0.12551
+        },
+        {
+          "step": 375,
+          "avr_loss": 0.09229,
+          "cur_loss": 0.18108
+        },
+        {
+          "step": 400,
+          "avr_loss": 0.09162,
+          "cur_loss": 0.00315
+        },
+        {
+          "step": 425,
+          "avr_loss": 0.091,
+          "cur_loss": 0.01486
+        },
+        {
+          "step": 450,
+          "avr_loss": 0.09102,
+          "cur_loss": 0.09237
+        },
+        {
+          "step": 475,
+          "avr_loss": 0.08977,
+          "cur_loss": 0.00708
+        },
+        {
+          "step": 500,
+          "avr_loss": 0.0884,
+          "cur_loss": 0.01659
+        },
+        {
+          "step": 525,
+          "avr_loss": 0.0882,
+          "cur_loss": 0.01748
+        },
+        {
+          "step": 550,
+          "avr_loss": 0.08831,
+          "cur_loss": 0.19055
+        },
+        {
+          "step": 575,
+          "avr_loss": 0.08765,
+          "cur_loss": 0.01928
+        },
+        {
+          "step": 600,
+          "avr_loss": 0.08785,
+          "cur_loss": 0.02457
+        },
+        {
+          "step": 625,
+          "avr_loss": 0.08688,
+          "cur_loss": 0.21913
+        },
+        {
+          "step": 650,
+          "avr_loss": 0.0869,
+          "cur_loss": 0.05592
+        },
+        {
+          "step": 675,
+          "avr_loss": 0.08613,
+          "cur_loss": 0.00328
+        },
+        {
+          "step": 700,
+          "avr_loss": 0.08625,
+          "cur_loss": 0.04513
+        },
+        {
+          "step": 725,
+          "avr_loss": 0.0851,
+          "cur_loss": 0.09455
+        },
+        {
+          "step": 750,
+          "avr_loss": 0.08544,
+          "cur_loss": 0.00747
+        },
+        {
+          "step": 775,
+          "avr_loss": 0.08574,
+          "cur_loss": 0.01292
+        },
+        {
+          "step": 800,
+          "avr_loss": 0.0847,
+          "cur_loss": 0.03512
+        },
+        {
+          "step": 825,
+          "avr_loss": 0.08453,
+          "cur_loss": 0.02356
+        },
+        {
+          "step": 850,
+          "avr_loss": 0.08289,
+          "cur_loss": 0.08405
+        },
+        {
+          "step": 875,
+          "avr_loss": 0.08332,
+          "cur_loss": 0.18867
+        },
+        {
+          "step": 900,
+          "avr_loss": 0.08128,
+          "cur_loss": 0.00771
+        },
+        {
+          "step": 925,
+          "avr_loss": 0.08086,
+          "cur_loss": 0.01915
+        },
+        {
+          "step": 950,
+          "avr_loss": 0.07949,
+          "cur_loss": 0.16222
+        },
+        {
+          "step": 975,
+          "avr_loss": 0.07878,
+          "cur_loss": 0.12178
+        },
+        {
+          "step": 1000,
+          "avr_loss": 0.07882,
+          "cur_loss": 0.1605
+        },
+        {
+          "step": 1025,
+          "avr_loss": 0.07939,
+          "cur_loss": 0.00802
+        },
+        {
+          "step": 1050,
+          "avr_loss": 0.07893,
+          "cur_loss": 0.15499
+        },
+        {
+          "step": 1075,
+          "avr_loss": 0.079,
+          "cur_loss": 0.17306
+        },
+        {
+          "step": 1100,
+          "avr_loss": 0.07948,
+          "cur_loss": 0.09911
+        },
+        {
+          "step": 1125,
+          "avr_loss": 0.07918,
+          "cur_loss": 0.00277
+        },
+        {
+          "step": 1150,
+          "avr_loss": 0.08085,
+          "cur_loss": 0.18553
+        },
+        {
+          "step": 1175,
+          "avr_loss": 0.08178,
+          "cur_loss": 0.12266
+        },
+        {
+          "step": 1200,
+          "avr_loss": 0.08189,
+          "cur_loss": 0.01339
+        },
+        {
+          "step": 1225,
+          "avr_loss": 0.08116,
+          "cur_loss": 0.14935
+        },
+        {
+          "step": 1250,
+          "avr_loss": 0.08135,
+          "cur_loss": 0.04933
+        },
+        {
+          "step": 1275,
+          "avr_loss": 0.08235,
+          "cur_loss": 0.20754
+        },
+        {
+          "step": 1300,
+          "avr_loss": 0.08168,
+          "cur_loss": 0.11738
+        },
+        {
+          "step": 1325,
+          "avr_loss": 0.08156,
+          "cur_loss": 0.01563
+        },
+        {
+          "step": 1350,
+          "avr_loss": 0.08196,
+          "cur_loss": 0.09589
+        },
+        {
+          "step": 1375,
+          "avr_loss": 0.08374,
+          "cur_loss": 0.05894
+        },
+        {
+          "step": 1400,
+          "avr_loss": 0.08259,
+          "cur_loss": 0.01013
+        },
+        {
+          "step": 1425,
+          "avr_loss": 0.08361,
+          "cur_loss": 0.02438
+        },
+        {
+          "step": 1450,
+          "avr_loss": 0.08415,
+          "cur_loss": 0.05058
+        },
+        {
+          "step": 1475,
+          "avr_loss": 0.08533,
+          "cur_loss": 0.02184
+        },
+        {
+          "step": 1500,
+          "avr_loss": 0.08508,
+          "cur_loss": 0.03029
+        },
+        {
+          "step": 1525,
+          "avr_loss": 0.08462,
+          "cur_loss": 0.07439
+        },
+        {
+          "step": 1550,
+          "avr_loss": 0.08552,
+          "cur_loss": 0.14306
+        },
+        {
+          "step": 1575,
+          "avr_loss": 0.08456,
+          "cur_loss": 0.00776
+        },
+        {
+          "step": 1600,
+          "avr_loss": 0.08409,
+          "cur_loss": 0.01035
+        },
+        {
+          "step": 1625,
+          "avr_loss": 0.08428,
+          "cur_loss": 0.00705
+        },
+        {
+          "step": 1650,
+          "avr_loss": 0.08324,
+          "cur_loss": 0.02351
+        },
+        {
+          "step": 1675,
+          "avr_loss": 0.08254,
+          "cur_loss": 0.10467
+        },
+        {
+          "step": 1700,
+          "avr_loss": 0.08237,
+          "cur_loss": 0.0355
+        },
+        {
+          "step": 1725,
+          "avr_loss": 0.08296,
+          "cur_loss": 0.04897
+        },
+        {
+          "step": 1750,
+          "avr_loss": 0.08399,
+          "cur_loss": 0.15132
+        },
+        {
+          "step": 1775,
+          "avr_loss": 0.08312,
+          "cur_loss": 0.08744
+        },
+        {
+          "step": 1800,
+          "avr_loss": 0.08299,
+          "cur_loss": 0.0317
+        },
+        {
+          "step": 1825,
+          "avr_loss": 0.08304,
+          "cur_loss": 0.1282
+        },
+        {
+          "step": 1850,
+          "avr_loss": 0.08265,
+          "cur_loss": 0.02454
+        },
+        {
+          "step": 1875,
+          "avr_loss": 0.08325,
+          "cur_loss": 0.16614
+        },
+        {
+          "step": 1900,
+          "avr_loss": 0.08318,
+          "cur_loss": 0.17643
+        },
+        {
+          "step": 1925,
+          "avr_loss": 0.08365,
+          "cur_loss": 0.00799
+        },
+        {
+          "step": 1950,
+          "avr_loss": 0.08358,
+          "cur_loss": 0.18246
+        },
+        {
+          "step": 1975,
+          "avr_loss": 0.08419,
+          "cur_loss": 0.05087
+        },
+        {
+          "step": 2000,
+          "avr_loss": 0.08398,
+          "cur_loss": 0.02286
+        },
+        {
+          "step": 2025,
+          "avr_loss": 0.08263,
+          "cur_loss": 0.01279
+        },
+        {
+          "step": 2050,
+          "avr_loss": 0.08302,
+          "cur_loss": 0.0095
+        },
+        {
+          "step": 2075,
+          "avr_loss": 0.08306,
+          "cur_loss": 0.01818
+        },
+        {
+          "step": 2100,
+          "avr_loss": 0.08274,
+          "cur_loss": 0.00248
+        },
+        {
+          "step": 2125,
+          "avr_loss": 0.08181,
+          "cur_loss": 0.07205
+        },
+        {
+          "step": 2150,
+          "avr_loss": 0.08176,
+          "cur_loss": 0.01323
+        },
+        {
+          "step": 2175,
+          "avr_loss": 0.0824,
+          "cur_loss": 0.01553
+        },
+        {
+          "step": 2200,
+          "avr_loss": 0.08318,
+          "cur_loss": 0.03437
+        },
+        {
+          "step": 2225,
+          "avr_loss": 0.08284,
+          "cur_loss": 0.05682
+        },
+        {
+          "step": 2250,
+          "avr_loss": 0.08373,
+          "cur_loss": 0.01915
+        },
+        {
+          "step": 2275,
+          "avr_loss": 0.08336,
+          "cur_loss": 0.16108
+        },
+        {
+          "step": 2300,
+          "avr_loss": 0.08501,
+          "cur_loss": 0.03
+        },
+        {
+          "step": 2325,
+          "avr_loss": 0.08394,
+          "cur_loss": 0.09824
+        },
+        {
+          "step": 2350,
+          "avr_loss": 0.08619,
+          "cur_loss": 0.09041
+        },
+        {
+          "step": 2375,
+          "avr_loss": 0.08538,
+          "cur_loss": 0.20131
+        },
+        {
+          "step": 2400,
+          "avr_loss": 0.08453,
+          "cur_loss": 0.10012
+        },
+        {
+          "step": 2425,
+          "avr_loss": 0.08577,
+          "cur_loss": 0.0411
+        },
+        {
+          "step": 2450,
+          "avr_loss": 0.08456,
+          "cur_loss": 0.18282
+        },
+        {
+          "step": 2475,
+          "avr_loss": 0.08404,
+          "cur_loss": 0.14141
+        },
+        {
+          "step": 2500,
+          "avr_loss": 0.08356,
+          "cur_loss": 0.10497
+        },
+        {
+          "step": 2525,
+          "avr_loss": 0.08273,
+          "cur_loss": 0.09982
+        },
+        {
+          "step": 2550,
+          "avr_loss": 0.08228,
+          "cur_loss": 0.00614
+        },
+        {
+          "step": 2575,
+          "avr_loss": 0.08183,
+          "cur_loss": 0.10498
+        },
+        {
+          "step": 2600,
+          "avr_loss": 0.08205,
+          "cur_loss": 0.01949
+        },
+        {
+          "step": 2625,
+          "avr_loss": 0.08128,
+          "cur_loss": 0.00596
+        },
+        {
+          "step": 2650,
+          "avr_loss": 0.08139,
+          "cur_loss": 0.00665
+        },
+        {
+          "step": 2675,
+          "avr_loss": 0.08188,
+          "cur_loss": 0.03139
+        },
+        {
+          "step": 2700,
+          "avr_loss": 0.08057,
+          "cur_loss": 0.01479
+        },
+        {
+          "step": 2725,
+          "avr_loss": 0.08067,
+          "cur_loss": 0.02608
+        },
+        {
+          "step": 2750,
+          "avr_loss": 0.08155,
+          "cur_loss": 0.01176
+        },
+        {
+          "step": 2775,
+          "avr_loss": 0.08239,
+          "cur_loss": 0.13767
+        },
+        {
+          "step": 2800,
+          "avr_loss": 0.08189,
+          "cur_loss": 0.00663
+        },
+        {
+          "step": 2825,
+          "avr_loss": 0.08239,
+          "cur_loss": 0.21692
+        },
+        {
+          "step": 2850,
+          "avr_loss": 0.08275,
+          "cur_loss": 0.07665
+        },
+        {
+          "step": 2875,
+          "avr_loss": 0.08358,
+          "cur_loss": 0.06913
+        },
+        {
+          "step": 2900,
+          "avr_loss": 0.08297,
+          "cur_loss": 0.18542
+        },
+        {
+          "step": 2925,
+          "avr_loss": 0.0828,
+          "cur_loss": 0.09827
+        },
+        {
+          "step": 2950,
+          "avr_loss": 0.08257,
+          "cur_loss": 0.01653
+        },
+        {
+          "step": 2975,
+          "avr_loss": 0.08303,
+          "cur_loss": 0.17149
+        },
+        {
+          "step": 3000,
+          "avr_loss": 0.08181,
+          "cur_loss": 0.13664
+        }
+      ]
+    }
+  }
+}

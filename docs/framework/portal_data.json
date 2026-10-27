@@ -1,0 +1,2335 @@
+{
+  "generated_at": "2026-10-27 14:44:50 CET",
+  "sources_hash": "47663d5242ff453b07615e9815786917167a3dd995088ec0c8654b612b03302e",
+  "sources": [
+    "training_output/steeven_sdxl/SUITE.md",
+    "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md",
+    "docs/reports/COMPTE_RENDU_TRAININGS_NEMERIYS_SDXL_20261027.md",
+    "docs/reports/matrice_pret_training_avatars_hf.md"
+  ],
+  "base_models": [
+    "SDXL",
+    "Flux",
+    "SD1.5"
+  ],
+  "runs": [
+    {
+      "id": "nemeriys_sdxl_v2",
+      "name": "Nemeriys SDXL v2",
+      "base_model": "SDXL",
+      "status": "completed",
+      "steps_done": 6000,
+      "steps_target": 6000,
+      "progress_ratio": 1.0,
+      "last_update": "2026-10-27 13:31",
+      "notes": [
+        "Run Kohya SDXL terminé 6000/6000 le 27 octobre 2026 à 13:31 (Europe/Paris). GPU 0, VAE en fp32 (no_half_vae).",
+        "Meilleur loss/average des checkpoints sauvés : step 2100, 0.0789. Dernier loss/average au step 6000 : 0.0870.",
+        "Aucun step NaN sur 6000 steps (loss/current et loss/average). Le run NaN arrêté au step 189 (nemeris_1026) est écarté.",
+        "Hors classement : loss/average au step 2 vaut 0.0253 (moyenne à peine démarrée) et loss/current au step 5756 vaut 0.0010 (un batch). Aucun fichier n'est sauvé à ces steps.",
+        "Dataset : 82 images, repeats 4, 1024, base Juggernaut XL Ragnarok, rank 72 / alpha 36.",
+        "Log TensorBoard : training_output/nemeris_sdxl/tb/20261027065212/nemeriys_sdxl/. Le log texte nemeriys_sdxl-v2.log est vide."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_NEMERIYS_SDXL_20261027.md",
+        "training_output/nemeris_sdxl/config_lora_nemeriys_sdxl.toml",
+        "training_output/loss_metrics_index.json"
+      ],
+      "loss_last": 0.087,
+      "loss_curve": {
+        "source": "training_output/nemeris_sdxl/tb/20261027065212/nemeriys_sdxl",
+        "points": [
+          {
+            "step": 300.0,
+            "loss": 0.079751
+          },
+          {
+            "step": 600.0,
+            "loss": 0.084051
+          },
+          {
+            "step": 900.0,
+            "loss": 0.085292
+          },
+          {
+            "step": 1200.0,
+            "loss": 0.079283
+          },
+          {
+            "step": 1500.0,
+            "loss": 0.080212
+          },
+          {
+            "step": 1800.0,
+            "loss": 0.082512
+          },
+          {
+            "step": 2100.0,
+            "loss": 0.078933
+          },
+          {
+            "step": 2400.0,
+            "loss": 0.080268
+          },
+          {
+            "step": 2700.0,
+            "loss": 0.084123
+          },
+          {
+            "step": 3000.0,
+            "loss": 0.08132
+          },
+          {
+            "step": 3300.0,
+            "loss": 0.080422
+          },
+          {
+            "step": 3600.0,
+            "loss": 0.082599
+          },
+          {
+            "step": 3900.0,
+            "loss": 0.081629
+          },
+          {
+            "step": 4200.0,
+            "loss": 0.081488
+          },
+          {
+            "step": 4500.0,
+            "loss": 0.086039
+          },
+          {
+            "step": 4800.0,
+            "loss": 0.085453
+          },
+          {
+            "step": 5100.0,
+            "loss": 0.083292
+          },
+          {
+            "step": 5400.0,
+            "loss": 0.087739
+          },
+          {
+            "step": 5700.0,
+            "loss": 0.090326
+          },
+          {
+            "step": 6000.0,
+            "loss": 0.087004
+          }
+        ],
+        "note": "loss/average aux sauvegardes (tous les 300 steps). Point vert : step 2100. Le step 2 et le step 5756 ne sont pas des checkpoints."
+      },
+      "proofs": [
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2-step00002100.safetensors",
+          "exists": true,
+          "width": null,
+          "height": null,
+          "step": 2100,
+          "prompt": ""
+        },
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeriys_sdxl_v2.safetensors",
+          "exists": true,
+          "width": null,
+          "height": null,
+          "step": 6000,
+          "prompt": ""
+        }
+      ],
+      "has_real_proof": true
+    },
+    {
+      "id": "steeven_sdxl_v2",
+      "name": "Steeven SDXL v2",
+      "base_model": "SDXL",
+      "status": "active",
+      "steps_done": 1300,
+      "steps_target": 2600,
+      "progress_ratio": 0.5,
+      "last_update": "2026-10-09",
+      "notes": [
+        "Reprise true-resume vers 2600 steps (Kohya, GPU1 Tesla M40).",
+        "Dernier loss/average TensorBoard observé: ~0.083"
+      ],
+      "sources": [
+        "training_output/steeven_sdxl/SUITE.md",
+        "docs/reports/matrice_pret_training_avatars_hf.md"
+      ],
+      "loss_last": 0.083,
+      "loss_curve": null,
+      "proofs": [],
+      "has_real_proof": false
+    },
+    {
+      "id": "delphine_sdxl_v2",
+      "name": "Delphine SDXL v2 rank32",
+      "base_model": "SDXL",
+      "status": "completed",
+      "steps_done": 1500,
+      "steps_target": 1500,
+      "progress_ratio": 1.0,
+      "last_update": "2026-09-24",
+      "notes": [
+        "Run Kohya SDXL 1500/1500, avr_loss≈0.095.",
+        "Upload HF échoué (token/repo mal formé côté Kohya)."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": 0.095,
+      "loss_curve": {
+        "source": "training_kohya_delphine_v2.log",
+        "points": [
+          {
+            "step": 1.0,
+            "loss": 0.0426
+          },
+          {
+            "step": 6.0,
+            "loss": 0.107
+          },
+          {
+            "step": 11.0,
+            "loss": 0.141
+          },
+          {
+            "step": 16.0,
+            "loss": 0.132
+          },
+          {
+            "step": 21.0,
+            "loss": 0.113
+          },
+          {
+            "step": 26.0,
+            "loss": 0.12
+          },
+          {
+            "step": 31.0,
+            "loss": 0.114
+          },
+          {
+            "step": 36.0,
+            "loss": 0.118
+          },
+          {
+            "step": 41.0,
+            "loss": 0.114
+          },
+          {
+            "step": 46.0,
+            "loss": 0.107
+          },
+          {
+            "step": 51.0,
+            "loss": 0.103
+          },
+          {
+            "step": 56.0,
+            "loss": 0.0989
+          },
+          {
+            "step": 61.0,
+            "loss": 0.105
+          },
+          {
+            "step": 66.0,
+            "loss": 0.102
+          },
+          {
+            "step": 71.0,
+            "loss": 0.102
+          },
+          {
+            "step": 76.0,
+            "loss": 0.108
+          },
+          {
+            "step": 81.0,
+            "loss": 0.105
+          },
+          {
+            "step": 86.0,
+            "loss": 0.104
+          },
+          {
+            "step": 91.0,
+            "loss": 0.103
+          },
+          {
+            "step": 96.0,
+            "loss": 0.104
+          },
+          {
+            "step": 101.0,
+            "loss": 0.106
+          },
+          {
+            "step": 106.0,
+            "loss": 0.11
+          },
+          {
+            "step": 111.0,
+            "loss": 0.112
+          },
+          {
+            "step": 116.0,
+            "loss": 0.114
+          },
+          {
+            "step": 121.0,
+            "loss": 0.117
+          },
+          {
+            "step": 126.0,
+            "loss": 0.114
+          },
+          {
+            "step": 131.0,
+            "loss": 0.116
+          },
+          {
+            "step": 136.0,
+            "loss": 0.12
+          },
+          {
+            "step": 141.0,
+            "loss": 0.121
+          },
+          {
+            "step": 146.0,
+            "loss": 0.122
+          },
+          {
+            "step": 151.0,
+            "loss": 0.125
+          },
+          {
+            "step": 156.0,
+            "loss": 0.127
+          },
+          {
+            "step": 161.0,
+            "loss": 0.131
+          },
+          {
+            "step": 166.0,
+            "loss": 0.131
+          },
+          {
+            "step": 171.0,
+            "loss": 0.135
+          },
+          {
+            "step": 176.0,
+            "loss": 0.132
+          },
+          {
+            "step": 181.0,
+            "loss": 0.132
+          },
+          {
+            "step": 186.0,
+            "loss": 0.132
+          },
+          {
+            "step": 191.0,
+            "loss": 0.13
+          },
+          {
+            "step": 196.0,
+            "loss": 0.134
+          },
+          {
+            "step": 201.0,
+            "loss": 0.136
+          },
+          {
+            "step": 206.0,
+            "loss": 0.138
+          },
+          {
+            "step": 211.0,
+            "loss": 0.139
+          },
+          {
+            "step": 216.0,
+            "loss": 0.14
+          },
+          {
+            "step": 221.0,
+            "loss": 0.138
+          },
+          {
+            "step": 226.0,
+            "loss": 0.134
+          },
+          {
+            "step": 231.0,
+            "loss": 0.129
+          },
+          {
+            "step": 236.0,
+            "loss": 0.123
+          },
+          {
+            "step": 241.0,
+            "loss": 0.126
+          },
+          {
+            "step": 246.0,
+            "loss": 0.122
+          },
+          {
+            "step": 251.0,
+            "loss": 0.122
+          },
+          {
+            "step": 256.0,
+            "loss": 0.12
+          },
+          {
+            "step": 261.0,
+            "loss": 0.117
+          },
+          {
+            "step": 266.0,
+            "loss": 0.111
+          },
+          {
+            "step": 271.0,
+            "loss": 0.111
+          },
+          {
+            "step": 276.0,
+            "loss": 0.108
+          },
+          {
+            "step": 281.0,
+            "loss": 0.111
+          },
+          {
+            "step": 286.0,
+            "loss": 0.114
+          },
+          {
+            "step": 291.0,
+            "loss": 0.112
+          },
+          {
+            "step": 296.0,
+            "loss": 0.114
+          },
+          {
+            "step": 301.0,
+            "loss": 0.113
+          },
+          {
+            "step": 306.0,
+            "loss": 0.114
+          },
+          {
+            "step": 311.0,
+            "loss": 0.111
+          },
+          {
+            "step": 316.0,
+            "loss": 0.112
+          },
+          {
+            "step": 321.0,
+            "loss": 0.109
+          },
+          {
+            "step": 326.0,
+            "loss": 0.106
+          },
+          {
+            "step": 331.0,
+            "loss": 0.109
+          },
+          {
+            "step": 336.0,
+            "loss": 0.106
+          },
+          {
+            "step": 341.0,
+            "loss": 0.11
+          },
+          {
+            "step": 346.0,
+            "loss": 0.114
+          },
+          {
+            "step": 351.0,
+            "loss": 0.116
+          },
+          {
+            "step": 356.0,
+            "loss": 0.119
+          },
+          {
+            "step": 361.0,
+            "loss": 0.119
+          },
+          {
+            "step": 366.0,
+            "loss": 0.113
+          },
+          {
+            "step": 371.0,
+            "loss": 0.119
+          },
+          {
+            "step": 376.0,
+            "loss": 0.119
+          },
+          {
+            "step": 381.0,
+            "loss": 0.121
+          },
+          {
+            "step": 386.0,
+            "loss": 0.122
+          },
+          {
+            "step": 391.0,
+            "loss": 0.115
+          },
+          {
+            "step": 396.0,
+            "loss": 0.117
+          },
+          {
+            "step": 401.0,
+            "loss": 0.112
+          },
+          {
+            "step": 406.0,
+            "loss": 0.114
+          },
+          {
+            "step": 411.0,
+            "loss": 0.111
+          },
+          {
+            "step": 416.0,
+            "loss": 0.113
+          },
+          {
+            "step": 421.0,
+            "loss": 0.11
+          },
+          {
+            "step": 426.0,
+            "loss": 0.112
+          },
+          {
+            "step": 431.0,
+            "loss": 0.108
+          },
+          {
+            "step": 436.0,
+            "loss": 0.107
+          },
+          {
+            "step": 441.0,
+            "loss": 0.11
+          },
+          {
+            "step": 446.0,
+            "loss": 0.111
+          },
+          {
+            "step": 451.0,
+            "loss": 0.112
+          },
+          {
+            "step": 456.0,
+            "loss": 0.106
+          },
+          {
+            "step": 461.0,
+            "loss": 0.102
+          },
+          {
+            "step": 466.0,
+            "loss": 0.103
+          },
+          {
+            "step": 471.0,
+            "loss": 0.102
+          },
+          {
+            "step": 476.0,
+            "loss": 0.103
+          },
+          {
+            "step": 481.0,
+            "loss": 0.104
+          },
+          {
+            "step": 486.0,
+            "loss": 0.102
+          },
+          {
+            "step": 491.0,
+            "loss": 0.101
+          },
+          {
+            "step": 496.0,
+            "loss": 0.105
+          },
+          {
+            "step": 501.0,
+            "loss": 0.105
+          },
+          {
+            "step": 506.0,
+            "loss": 0.108
+          },
+          {
+            "step": 511.0,
+            "loss": 0.108
+          },
+          {
+            "step": 516.0,
+            "loss": 0.107
+          },
+          {
+            "step": 521.0,
+            "loss": 0.109
+          },
+          {
+            "step": 526.0,
+            "loss": 0.112
+          },
+          {
+            "step": 531.0,
+            "loss": 0.112
+          },
+          {
+            "step": 536.0,
+            "loss": 0.117
+          },
+          {
+            "step": 541.0,
+            "loss": 0.113
+          },
+          {
+            "step": 546.0,
+            "loss": 0.117
+          },
+          {
+            "step": 551.0,
+            "loss": 0.119
+          },
+          {
+            "step": 556.0,
+            "loss": 0.117
+          },
+          {
+            "step": 561.0,
+            "loss": 0.113
+          },
+          {
+            "step": 566.0,
+            "loss": 0.116
+          },
+          {
+            "step": 571.0,
+            "loss": 0.116
+          },
+          {
+            "step": 576.0,
+            "loss": 0.119
+          },
+          {
+            "step": 581.0,
+            "loss": 0.119
+          },
+          {
+            "step": 586.0,
+            "loss": 0.119
+          },
+          {
+            "step": 591.0,
+            "loss": 0.113
+          },
+          {
+            "step": 596.0,
+            "loss": 0.116
+          },
+          {
+            "step": 601.0,
+            "loss": 0.116
+          },
+          {
+            "step": 606.0,
+            "loss": 0.115
+          },
+          {
+            "step": 611.0,
+            "loss": 0.117
+          },
+          {
+            "step": 616.0,
+            "loss": 0.115
+          },
+          {
+            "step": 621.0,
+            "loss": 0.117
+          },
+          {
+            "step": 626.0,
+            "loss": 0.116
+          },
+          {
+            "step": 631.0,
+            "loss": 0.12
+          },
+          {
+            "step": 636.0,
+            "loss": 0.122
+          },
+          {
+            "step": 641.0,
+            "loss": 0.119
+          },
+          {
+            "step": 646.0,
+            "loss": 0.116
+          },
+          {
+            "step": 651.0,
+            "loss": 0.117
+          },
+          {
+            "step": 656.0,
+            "loss": 0.115
+          },
+          {
+            "step": 661.0,
+            "loss": 0.12
+          },
+          {
+            "step": 666.0,
+            "loss": 0.119
+          },
+          {
+            "step": 671.0,
+            "loss": 0.12
+          },
+          {
+            "step": 676.0,
+            "loss": 0.122
+          },
+          {
+            "step": 681.0,
+            "loss": 0.119
+          },
+          {
+            "step": 686.0,
+            "loss": 0.118
+          },
+          {
+            "step": 691.0,
+            "loss": 0.113
+          },
+          {
+            "step": 696.0,
+            "loss": 0.114
+          },
+          {
+            "step": 701.0,
+            "loss": 0.114
+          },
+          {
+            "step": 706.0,
+            "loss": 0.119
+          },
+          {
+            "step": 711.0,
+            "loss": 0.12
+          },
+          {
+            "step": 716.0,
+            "loss": 0.121
+          },
+          {
+            "step": 721.0,
+            "loss": 0.122
+          },
+          {
+            "step": 726.0,
+            "loss": 0.116
+          },
+          {
+            "step": 731.0,
+            "loss": 0.116
+          },
+          {
+            "step": 736.0,
+            "loss": 0.116
+          },
+          {
+            "step": 741.0,
+            "loss": 0.115
+          },
+          {
+            "step": 746.0,
+            "loss": 0.116
+          },
+          {
+            "step": 751.0,
+            "loss": 0.115
+          },
+          {
+            "step": 756.0,
+            "loss": 0.118
+          },
+          {
+            "step": 761.0,
+            "loss": 0.119
+          },
+          {
+            "step": 766.0,
+            "loss": 0.118
+          },
+          {
+            "step": 771.0,
+            "loss": 0.116
+          },
+          {
+            "step": 776.0,
+            "loss": 0.118
+          },
+          {
+            "step": 781.0,
+            "loss": 0.113
+          },
+          {
+            "step": 786.0,
+            "loss": 0.112
+          },
+          {
+            "step": 791.0,
+            "loss": 0.114
+          },
+          {
+            "step": 796.0,
+            "loss": 0.117
+          },
+          {
+            "step": 801.0,
+            "loss": 0.116
+          },
+          {
+            "step": 806.0,
+            "loss": 0.119
+          },
+          {
+            "step": 811.0,
+            "loss": 0.121
+          },
+          {
+            "step": 816.0,
+            "loss": 0.122
+          },
+          {
+            "step": 821.0,
+            "loss": 0.119
+          },
+          {
+            "step": 826.0,
+            "loss": 0.115
+          },
+          {
+            "step": 831.0,
+            "loss": 0.117
+          },
+          {
+            "step": 836.0,
+            "loss": 0.115
+          },
+          {
+            "step": 841.0,
+            "loss": 0.118
+          },
+          {
+            "step": 846.0,
+            "loss": 0.118
+          },
+          {
+            "step": 851.0,
+            "loss": 0.114
+          },
+          {
+            "step": 856.0,
+            "loss": 0.117
+          },
+          {
+            "step": 861.0,
+            "loss": 0.113
+          },
+          {
+            "step": 866.0,
+            "loss": 0.114
+          },
+          {
+            "step": 871.0,
+            "loss": 0.115
+          },
+          {
+            "step": 876.0,
+            "loss": 0.115
+          },
+          {
+            "step": 881.0,
+            "loss": 0.115
+          },
+          {
+            "step": 886.0,
+            "loss": 0.116
+          },
+          {
+            "step": 891.0,
+            "loss": 0.11
+          },
+          {
+            "step": 896.0,
+            "loss": 0.115
+          },
+          {
+            "step": 901.0,
+            "loss": 0.115
+          },
+          {
+            "step": 906.0,
+            "loss": 0.114
+          },
+          {
+            "step": 911.0,
+            "loss": 0.112
+          },
+          {
+            "step": 916.0,
+            "loss": 0.112
+          },
+          {
+            "step": 921.0,
+            "loss": 0.109
+          },
+          {
+            "step": 926.0,
+            "loss": 0.112
+          },
+          {
+            "step": 931.0,
+            "loss": 0.112
+          },
+          {
+            "step": 936.0,
+            "loss": 0.111
+          },
+          {
+            "step": 941.0,
+            "loss": 0.112
+          },
+          {
+            "step": 946.0,
+            "loss": 0.107
+          },
+          {
+            "step": 951.0,
+            "loss": 0.106
+          },
+          {
+            "step": 956.0,
+            "loss": 0.106
+          },
+          {
+            "step": 961.0,
+            "loss": 0.108
+          },
+          {
+            "step": 966.0,
+            "loss": 0.109
+          },
+          {
+            "step": 971.0,
+            "loss": 0.107
+          },
+          {
+            "step": 976.0,
+            "loss": 0.109
+          },
+          {
+            "step": 981.0,
+            "loss": 0.107
+          },
+          {
+            "step": 986.0,
+            "loss": 0.105
+          },
+          {
+            "step": 991.0,
+            "loss": 0.103
+          },
+          {
+            "step": 996.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1001.0,
+            "loss": 0.0974
+          },
+          {
+            "step": 1006.0,
+            "loss": 0.0978
+          },
+          {
+            "step": 1011.0,
+            "loss": 0.0978
+          },
+          {
+            "step": 1016.0,
+            "loss": 0.0967
+          },
+          {
+            "step": 1021.0,
+            "loss": 0.0971
+          },
+          {
+            "step": 1026.0,
+            "loss": 0.0947
+          },
+          {
+            "step": 1031.0,
+            "loss": 0.0911
+          },
+          {
+            "step": 1036.0,
+            "loss": 0.0973
+          },
+          {
+            "step": 1041.0,
+            "loss": 0.095
+          },
+          {
+            "step": 1046.0,
+            "loss": 0.0939
+          },
+          {
+            "step": 1051.0,
+            "loss": 0.099
+          },
+          {
+            "step": 1056.0,
+            "loss": 0.098
+          },
+          {
+            "step": 1061.0,
+            "loss": 0.0982
+          },
+          {
+            "step": 1066.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1071.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1076.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1081.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1086.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1091.0,
+            "loss": 0.102
+          },
+          {
+            "step": 1096.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1101.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1106.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1111.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1116.0,
+            "loss": 0.109
+          },
+          {
+            "step": 1121.0,
+            "loss": 0.109
+          },
+          {
+            "step": 1126.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1131.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1136.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1141.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1146.0,
+            "loss": 0.107
+          },
+          {
+            "step": 1151.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1156.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1161.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1166.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1171.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1176.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1181.0,
+            "loss": 0.109
+          },
+          {
+            "step": 1186.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1191.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1196.0,
+            "loss": 0.0997
+          },
+          {
+            "step": 1201.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1206.0,
+            "loss": 0.104
+          },
+          {
+            "step": 1211.0,
+            "loss": 0.1
+          },
+          {
+            "step": 1216.0,
+            "loss": 0.1
+          },
+          {
+            "step": 1221.0,
+            "loss": 0.0977
+          },
+          {
+            "step": 1226.0,
+            "loss": 0.0985
+          },
+          {
+            "step": 1231.0,
+            "loss": 0.0966
+          },
+          {
+            "step": 1236.0,
+            "loss": 0.0951
+          },
+          {
+            "step": 1241.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1246.0,
+            "loss": 0.102
+          },
+          {
+            "step": 1251.0,
+            "loss": 0.107
+          },
+          {
+            "step": 1256.0,
+            "loss": 0.11
+          },
+          {
+            "step": 1261.0,
+            "loss": 0.109
+          },
+          {
+            "step": 1266.0,
+            "loss": 0.11
+          },
+          {
+            "step": 1271.0,
+            "loss": 0.111
+          },
+          {
+            "step": 1276.0,
+            "loss": 0.114
+          },
+          {
+            "step": 1281.0,
+            "loss": 0.111
+          },
+          {
+            "step": 1286.0,
+            "loss": 0.109
+          },
+          {
+            "step": 1291.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1296.0,
+            "loss": 0.108
+          },
+          {
+            "step": 1301.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1306.0,
+            "loss": 0.108
+          },
+          {
+            "step": 1311.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1316.0,
+            "loss": 0.102
+          },
+          {
+            "step": 1321.0,
+            "loss": 0.102
+          },
+          {
+            "step": 1326.0,
+            "loss": 0.106
+          },
+          {
+            "step": 1331.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1336.0,
+            "loss": 0.105
+          },
+          {
+            "step": 1341.0,
+            "loss": 0.103
+          },
+          {
+            "step": 1346.0,
+            "loss": 0.102
+          },
+          {
+            "step": 1351.0,
+            "loss": 0.101
+          },
+          {
+            "step": 1356.0,
+            "loss": 0.0968
+          },
+          {
+            "step": 1361.0,
+            "loss": 0.1
+          },
+          {
+            "step": 1366.0,
+            "loss": 0.0966
+          },
+          {
+            "step": 1371.0,
+            "loss": 0.091
+          },
+          {
+            "step": 1376.0,
+            "loss": 0.0893
+          },
+          {
+            "step": 1381.0,
+            "loss": 0.0864
+          },
+          {
+            "step": 1386.0,
+            "loss": 0.0874
+          },
+          {
+            "step": 1391.0,
+            "loss": 0.084
+          },
+          {
+            "step": 1396.0,
+            "loss": 0.0862
+          },
+          {
+            "step": 1401.0,
+            "loss": 0.0865
+          },
+          {
+            "step": 1406.0,
+            "loss": 0.0837
+          },
+          {
+            "step": 1411.0,
+            "loss": 0.0823
+          },
+          {
+            "step": 1416.0,
+            "loss": 0.0872
+          },
+          {
+            "step": 1421.0,
+            "loss": 0.0847
+          },
+          {
+            "step": 1426.0,
+            "loss": 0.0858
+          },
+          {
+            "step": 1431.0,
+            "loss": 0.0845
+          },
+          {
+            "step": 1436.0,
+            "loss": 0.0882
+          },
+          {
+            "step": 1441.0,
+            "loss": 0.0872
+          },
+          {
+            "step": 1446.0,
+            "loss": 0.0854
+          },
+          {
+            "step": 1451.0,
+            "loss": 0.0854
+          },
+          {
+            "step": 1456.0,
+            "loss": 0.086
+          },
+          {
+            "step": 1461.0,
+            "loss": 0.0866
+          },
+          {
+            "step": 1466.0,
+            "loss": 0.0882
+          },
+          {
+            "step": 1471.0,
+            "loss": 0.0882
+          },
+          {
+            "step": 1476.0,
+            "loss": 0.087
+          },
+          {
+            "step": 1481.0,
+            "loss": 0.0874
+          },
+          {
+            "step": 1486.0,
+            "loss": 0.0909
+          },
+          {
+            "step": 1491.0,
+            "loss": 0.0911
+          },
+          {
+            "step": 1496.0,
+            "loss": 0.0936
+          },
+          {
+            "step": 1500.0,
+            "loss": 0.095
+          }
+        ],
+        "note": ""
+      },
+      "proofs": [
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/sdxl_delphine_cassarino_32x16.safetensors",
+          "exists": false,
+          "width": null,
+          "height": null,
+          "step": null,
+          "prompt": ""
+        }
+      ],
+      "has_real_proof": false
+    },
+    {
+      "id": "delphine_sdxl_rank72",
+      "name": "Delphine SDXL rank72",
+      "base_model": "SDXL",
+      "status": "interrupted",
+      "steps_done": 1044,
+      "steps_target": 2200,
+      "progress_ratio": 0.47454545454545455,
+      "last_update": "2026-09-24",
+      "notes": [
+        "Run interrompu 1044/2200, overfit (pente +0.0042/step).",
+        "Checkpoint recommandé step 750 (déjà publié HF)."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": 0.349,
+      "loss_curve": null,
+      "proofs": [
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/sdxl_delphine_cassarino_72x96-step00000750.safetensors",
+          "exists": false,
+          "width": null,
+          "height": null,
+          "step": null,
+          "prompt": ""
+        }
+      ],
+      "has_real_proof": false
+    },
+    {
+      "id": "emma_sdxl_96x32",
+      "name": "Emma SDXL 96x32",
+      "base_model": "SDXL",
+      "status": "completed",
+      "steps_done": 3000,
+      "steps_target": 3000,
+      "progress_ratio": 1.0,
+      "last_update": "2026-09-29",
+      "notes": [
+        "Run SDXL Emma terminé 3000/3000 (inventaire 29/09).",
+        "loss/average TensorBoard ~0.091."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": 0.091,
+      "loss_curve": null,
+      "proofs": [
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/sdxl_emma_96x32.safetensors",
+          "exists": false,
+          "width": null,
+          "height": null,
+          "step": null,
+          "prompt": ""
+        }
+      ],
+      "has_real_proof": false
+    },
+    {
+      "id": "fowx_step3_sdxl",
+      "name": "Fowx Step3 SDXL",
+      "base_model": "SDXL",
+      "status": "interrupted",
+      "steps_done": 2556,
+      "steps_target": 16320,
+      "progress_ratio": 0.15661764705882353,
+      "last_update": "2026-04-08",
+      "notes": [
+        "Run interrompu 2556/16320 (SIGTERM).",
+        "avr_loss=nan dès step 762 — checkpoints ≥ 762 non fiables."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": null,
+      "loss_curve": null,
+      "proofs": [],
+      "has_real_proof": false
+    },
+    {
+      "id": "fowx_v2_sdxl",
+      "name": "Fowx Step2 v2 SDXL",
+      "base_model": "SDXL",
+      "status": "interrupted",
+      "steps_done": 806,
+      "steps_target": 1090,
+      "progress_ratio": 0.7394495412844037,
+      "last_update": "2026-04-08",
+      "notes": [
+        "Run interrompu 806/1090, log tronqué.",
+        "avr_loss fin ~0.097."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": 0.097,
+      "loss_curve": null,
+      "proofs": [],
+      "has_real_proof": false
+    },
+    {
+      "id": "fowx_opt_sdxl",
+      "name": "Fowx optimized SDXL",
+      "base_model": "SDXL",
+      "status": "interrupted",
+      "steps_done": 1009,
+      "steps_target": 1308,
+      "progress_ratio": 0.7714067278287462,
+      "last_update": "2026-04-08",
+      "notes": [
+        "Run interrompu 1009/1308 (SIGTERM).",
+        "avr_loss fin ~0.112, upload HF échoué."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": 0.112,
+      "loss_curve": null,
+      "proofs": [],
+      "has_real_proof": false
+    },
+    {
+      "id": "emma_flux",
+      "name": "Emma Flux rank32",
+      "base_model": "Flux",
+      "status": "waiting",
+      "steps_done": 1800,
+      "steps_target": 2550,
+      "progress_ratio": 0.7058823529411765,
+      "last_update": "2026-09-29",
+      "notes": [
+        "Run Flux Emma ~1800/2550 (inventaire).",
+        "Reprise via tools/emma_train_submit.py après Steeven."
+      ],
+      "sources": [
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md",
+        "docs/reports/matrice_pret_training_avatars_hf.md"
+      ],
+      "loss_last": null,
+      "loss_curve": null,
+      "proofs": [],
+      "has_real_proof": false
+    },
+    {
+      "id": "delphine_flux",
+      "name": "Delphine Flux rank32",
+      "base_model": "Flux",
+      "status": "completed",
+      "steps_done": 1766,
+      "steps_target": 1766,
+      "progress_ratio": 1.0,
+      "last_update": "2026-10-07",
+      "notes": [
+        "Run Flux Delphine terminé (flux_file_delphine_32network128_rank32_bf16.safetensors).",
+        "A/B visuel disponible sur smoke prompt."
+      ],
+      "sources": [
+        "docs/reports/matrice_pret_training_avatars_hf.md",
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md"
+      ],
+      "loss_last": null,
+      "loss_curve": null,
+      "proofs": [
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/delphine-step00800-smoke.png",
+          "exists": true,
+          "width": 512,
+          "height": 512,
+          "step": 800,
+          "prompt": "smoke"
+        },
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/delphine-step01766-smoke.png",
+          "exists": true,
+          "width": 512,
+          "height": 512,
+          "step": 1766,
+          "prompt": "smoke"
+        }
+      ],
+      "has_real_proof": true
+    },
+    {
+      "id": "delphine_flux_sel2",
+      "name": "Delphine Flux Selection_2",
+      "base_model": "Flux",
+      "status": "completed",
+      "steps_done": 1800,
+      "steps_target": 1800,
+      "progress_ratio": 1.0,
+      "last_update": "2026-10-17",
+      "notes": [
+        "Run Flux sel2 terminé step 1800 (token dcsrn / delphine_cassarino).",
+        "Sweet spot spectral : step 1550 (avr_loss=0.2995, ||W_up||₂=5.7306) vs step 1800 (avr_loss=0.2990, ||W_up||₂=5.7317).",
+        "Planche XY + Loss disponible : docs/framework/assets/delphine_sel2_flux_xy_loss_contact_sheet.png."
+      ],
+      "sources": [
+        "profiles/eval_prompts_delphine_sel2_flux.yaml",
+        "docs/workflows/delphine_flux_sel2_eval_and_publish_checklist.md",
+        "training_output/delphine_sel2/config_publish_delphine_sel2_step01800.toml"
+      ],
+      "loss_last": 0.299,
+      "loss_curve": {
+        "source": "training_output/loss_metrics_index.json#delphine_flux_sel2",
+        "points": [
+          {
+            "step": 50.0,
+            "loss": 0.342
+          },
+          {
+            "step": 300.0,
+            "loss": 0.324
+          },
+          {
+            "step": 550.0,
+            "loss": 0.315
+          },
+          {
+            "step": 800.0,
+            "loss": 0.308
+          },
+          {
+            "step": 1050.0,
+            "loss": 0.304
+          },
+          {
+            "step": 1300.0,
+            "loss": 0.3015
+          },
+          {
+            "step": 1550.0,
+            "loss": 0.2995
+          },
+          {
+            "step": 1800.0,
+            "loss": 0.299
+          }
+        ],
+        "note": "Progression loss + saturation ||W_up||₂ dès step 1550"
+      },
+      "proofs": [
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/delphine_sel2_flux_xy_loss_contact_sheet.png",
+          "exists": true,
+          "width": 1508,
+          "height": 2012,
+          "step": 1550,
+          "prompt": "Planche XY + Loss (steps 800 / 1550 / 1800)"
+        },
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/delphine_sel2_sdxl_xy_loss_contact_sheet.png",
+          "exists": true,
+          "width": 1738,
+          "height": 1712,
+          "step": 900,
+          "prompt": "Planche XY SDXL (steps 600→1200) + Réf Flux"
+        }
+      ],
+      "has_real_proof": true
+    },
+    {
+      "id": "fowx_flux_eval",
+      "name": "Fowx Flux eval (step344 & step690 OK / +1 ep → 828)",
+      "base_model": "Flux",
+      "status": "completed",
+      "steps_done": 690,
+      "steps_target": 828,
+      "progress_ratio": 0.8333333333333334,
+      "last_update": "2026-10-17",
+      "notes": [
+        "Calibration utilisateur : Run 1 DARK step00344 (ep 4) = OK validé ; step00690 (ep 5) = OK validé mais peut progresser sur +1 epoch supplémentaire (+138 steps → step 828).",
+        "Diagnostic Run 2 (fowx_32 step01712) : sous-convergé car les 920 images reg `1_woman` ont porté `ss_num_batches_per_epoch` à 852 (soit seulement 2.01 vrais passages en 1712 steps). Workflows de prolongation prêts.",
+        "Double règle de prompting Fowx (fowx ≠ fox + Carnation 690 vs 1712) : 1) Toujours ancrer `Photograph of fowx, an adult human woman solo` dès les premiers mots pour éviter la confusion phonétique `fowx` = `fox` (renard) dans FLUX. 2) Dans Step_3 (690 steps), 'Black' a été retiré des .txt avec 0 image reg (carnation encodée dans `fowx`) ; dans Step_4 (1712 steps), les 920 images reg `1_woman` à peau claire ('woman': 920 vs 'fowx': 213) imposent d'ajouter `Extremely dark obsidian skin, polished obsidian appearance, deep dark-brown ebony complexion`.",
+        "Détection automatique du checkpoint mort fowx_64-step00428 (Prodigy lr=1e-4, ||W_up||₂=0.0000)."
+      ],
+      "sources": [
+        "profiles/eval_prompts_fowx_flux.yaml",
+        "docs/workflows/fowx_flux_eval_and_publish_checklist.md",
+        "workflows/fowx_flux_resume_s690_plus1ep_828.json",
+        "workflows/fowx_flux_resume_s1712_plus3ep.json"
+      ],
+      "loss_last": 0.276,
+      "loss_curve": {
+        "source": "training_output/loss_metrics_index.json#fowx_flux",
+        "points": [
+          {
+            "step": 1.0,
+            "loss": 0.342
+          },
+          {
+            "step": 50.0,
+            "loss": 0.318
+          },
+          {
+            "step": 100.0,
+            "loss": 0.298
+          },
+          {
+            "step": 200.0,
+            "loss": 0.288
+          },
+          {
+            "step": 344.0,
+            "loss": 0.2845
+          },
+          {
+            "step": 428.0,
+            "loss": 0.326
+          },
+          {
+            "step": 500.0,
+            "loss": 0.298
+          },
+          {
+            "step": 690.0,
+            "loss": 0.276
+          },
+          {
+            "step": 856.0,
+            "loss": 0.329
+          },
+          {
+            "step": 1284.0,
+            "loss": 0.324
+          },
+          {
+            "step": 1712.0,
+            "loss": 0.319
+          }
+        ],
+        "note": "Validés OK : DARK step 344 (ep 4) & step 690 (ep 5, candidat +1 ep → 828) | fowx_32 step 1712 sous-convergé"
+      },
+      "proofs": [
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/fowx_flux_xy_loss_contact_sheet.png",
+          "exists": true,
+          "width": 2898,
+          "height": 2262,
+          "step": 690,
+          "prompt": "Planche XY 8 checkpoints × 5 prompts + Calibration step344/step690 OK & step1712 sous-convergé"
+        }
+      ],
+      "has_real_proof": true
+    },
+    {
+      "id": "nemeris_sd15",
+      "name": "Nemeris SD1.5",
+      "base_model": "SD1.5",
+      "status": "completed",
+      "steps_done": 3000,
+      "steps_target": 3000,
+      "progress_ratio": 1.0,
+      "last_update": "2026-10-17",
+      "notes": [
+        "Run SD1.5 DreamShaper 8 terminé 3000/3000 (token Kohya: n3m3riys).",
+        "Courbe TensorBoard exacte extraite (3000 steps) : sweet spot step 2500 (avr_loss=0.0836, L2=1.733) et final step 3000 (avr_loss=0.0818, L2=1.764).",
+        "Planche 8 prompts (A→H incluant contrôle sans trigger) validée."
+      ],
+      "sources": [
+        "docs/reports/matrice_pret_training_avatars_hf.md",
+        "docs/reports/COMPTE_RENDU_TRAININGS_20261007.md",
+        "profiles/eval_prompts_nemeris_sd15.yaml",
+        "docs/workflows/nemeris_sd15_eval_and_publish_checklist.md"
+      ],
+      "loss_last": 0.0818,
+      "loss_curve": {
+        "source": "logs/20261007064814/nemeris/events.out.tfevents",
+        "points": [
+          {
+            "step": 1.0,
+            "loss": 0.10276
+          },
+          {
+            "step": 25.0,
+            "loss": 0.10033
+          },
+          {
+            "step": 50.0,
+            "loss": 0.09238
+          },
+          {
+            "step": 75.0,
+            "loss": 0.09072
+          },
+          {
+            "step": 100.0,
+            "loss": 0.08445
+          },
+          {
+            "step": 125.0,
+            "loss": 0.07985
+          },
+          {
+            "step": 150.0,
+            "loss": 0.08257
+          },
+          {
+            "step": 175.0,
+            "loss": 0.08538
+          },
+          {
+            "step": 200.0,
+            "loss": 0.08832
+          },
+          {
+            "step": 225.0,
+            "loss": 0.0888
+          },
+          {
+            "step": 250.0,
+            "loss": 0.08814
+          },
+          {
+            "step": 275.0,
+            "loss": 0.08963
+          },
+          {
+            "step": 300.0,
+            "loss": 0.09187
+          },
+          {
+            "step": 325.0,
+            "loss": 0.09359
+          },
+          {
+            "step": 350.0,
+            "loss": 0.09282
+          },
+          {
+            "step": 375.0,
+            "loss": 0.09229
+          },
+          {
+            "step": 400.0,
+            "loss": 0.09162
+          },
+          {
+            "step": 425.0,
+            "loss": 0.091
+          },
+          {
+            "step": 450.0,
+            "loss": 0.09102
+          },
+          {
+            "step": 475.0,
+            "loss": 0.08977
+          },
+          {
+            "step": 500.0,
+            "loss": 0.0884
+          },
+          {
+            "step": 525.0,
+            "loss": 0.0882
+          },
+          {
+            "step": 550.0,
+            "loss": 0.08831
+          },
+          {
+            "step": 575.0,
+            "loss": 0.08765
+          },
+          {
+            "step": 600.0,
+            "loss": 0.08785
+          },
+          {
+            "step": 625.0,
+            "loss": 0.08688
+          },
+          {
+            "step": 650.0,
+            "loss": 0.0869
+          },
+          {
+            "step": 675.0,
+            "loss": 0.08613
+          },
+          {
+            "step": 700.0,
+            "loss": 0.08625
+          },
+          {
+            "step": 725.0,
+            "loss": 0.0851
+          },
+          {
+            "step": 750.0,
+            "loss": 0.08544
+          },
+          {
+            "step": 775.0,
+            "loss": 0.08574
+          },
+          {
+            "step": 800.0,
+            "loss": 0.0847
+          },
+          {
+            "step": 825.0,
+            "loss": 0.08453
+          },
+          {
+            "step": 850.0,
+            "loss": 0.08289
+          },
+          {
+            "step": 875.0,
+            "loss": 0.08332
+          },
+          {
+            "step": 900.0,
+            "loss": 0.08128
+          },
+          {
+            "step": 925.0,
+            "loss": 0.08086
+          },
+          {
+            "step": 950.0,
+            "loss": 0.07949
+          },
+          {
+            "step": 975.0,
+            "loss": 0.07878
+          },
+          {
+            "step": 1000.0,
+            "loss": 0.07882
+          },
+          {
+            "step": 1025.0,
+            "loss": 0.07939
+          },
+          {
+            "step": 1050.0,
+            "loss": 0.07893
+          },
+          {
+            "step": 1075.0,
+            "loss": 0.079
+          },
+          {
+            "step": 1100.0,
+            "loss": 0.07948
+          },
+          {
+            "step": 1125.0,
+            "loss": 0.07918
+          },
+          {
+            "step": 1150.0,
+            "loss": 0.08085
+          },
+          {
+            "step": 1175.0,
+            "loss": 0.08178
+          },
+          {
+            "step": 1200.0,
+            "loss": 0.08189
+          },
+          {
+            "step": 1225.0,
+            "loss": 0.08116
+          },
+          {
+            "step": 1250.0,
+            "loss": 0.08135
+          },
+          {
+            "step": 1275.0,
+            "loss": 0.08235
+          },
+          {
+            "step": 1300.0,
+            "loss": 0.08168
+          },
+          {
+            "step": 1325.0,
+            "loss": 0.08156
+          },
+          {
+            "step": 1350.0,
+            "loss": 0.08196
+          },
+          {
+            "step": 1375.0,
+            "loss": 0.08374
+          },
+          {
+            "step": 1400.0,
+            "loss": 0.08259
+          },
+          {
+            "step": 1425.0,
+            "loss": 0.08361
+          },
+          {
+            "step": 1450.0,
+            "loss": 0.08415
+          },
+          {
+            "step": 1475.0,
+            "loss": 0.08533
+          },
+          {
+            "step": 1500.0,
+            "loss": 0.08508
+          },
+          {
+            "step": 1525.0,
+            "loss": 0.08462
+          },
+          {
+            "step": 1550.0,
+            "loss": 0.08552
+          },
+          {
+            "step": 1575.0,
+            "loss": 0.08456
+          },
+          {
+            "step": 1600.0,
+            "loss": 0.08409
+          },
+          {
+            "step": 1625.0,
+            "loss": 0.08428
+          },
+          {
+            "step": 1650.0,
+            "loss": 0.08324
+          },
+          {
+            "step": 1675.0,
+            "loss": 0.08254
+          },
+          {
+            "step": 1700.0,
+            "loss": 0.08237
+          },
+          {
+            "step": 1725.0,
+            "loss": 0.08296
+          },
+          {
+            "step": 1750.0,
+            "loss": 0.08399
+          },
+          {
+            "step": 1775.0,
+            "loss": 0.08312
+          },
+          {
+            "step": 1800.0,
+            "loss": 0.08299
+          },
+          {
+            "step": 1825.0,
+            "loss": 0.08304
+          },
+          {
+            "step": 1850.0,
+            "loss": 0.08265
+          },
+          {
+            "step": 1875.0,
+            "loss": 0.08325
+          },
+          {
+            "step": 1900.0,
+            "loss": 0.08318
+          },
+          {
+            "step": 1925.0,
+            "loss": 0.08365
+          },
+          {
+            "step": 1950.0,
+            "loss": 0.08358
+          },
+          {
+            "step": 1975.0,
+            "loss": 0.08419
+          },
+          {
+            "step": 2000.0,
+            "loss": 0.08398
+          },
+          {
+            "step": 2025.0,
+            "loss": 0.08263
+          },
+          {
+            "step": 2050.0,
+            "loss": 0.08302
+          },
+          {
+            "step": 2075.0,
+            "loss": 0.08306
+          },
+          {
+            "step": 2100.0,
+            "loss": 0.08274
+          },
+          {
+            "step": 2125.0,
+            "loss": 0.08181
+          },
+          {
+            "step": 2150.0,
+            "loss": 0.08176
+          },
+          {
+            "step": 2175.0,
+            "loss": 0.0824
+          },
+          {
+            "step": 2200.0,
+            "loss": 0.08318
+          },
+          {
+            "step": 2225.0,
+            "loss": 0.08284
+          },
+          {
+            "step": 2250.0,
+            "loss": 0.08373
+          },
+          {
+            "step": 2275.0,
+            "loss": 0.08336
+          },
+          {
+            "step": 2300.0,
+            "loss": 0.08501
+          },
+          {
+            "step": 2325.0,
+            "loss": 0.08394
+          },
+          {
+            "step": 2350.0,
+            "loss": 0.08619
+          },
+          {
+            "step": 2375.0,
+            "loss": 0.08538
+          },
+          {
+            "step": 2400.0,
+            "loss": 0.08453
+          },
+          {
+            "step": 2425.0,
+            "loss": 0.08577
+          },
+          {
+            "step": 2450.0,
+            "loss": 0.08456
+          },
+          {
+            "step": 2475.0,
+            "loss": 0.08404
+          },
+          {
+            "step": 2500.0,
+            "loss": 0.08356
+          },
+          {
+            "step": 2525.0,
+            "loss": 0.08273
+          },
+          {
+            "step": 2550.0,
+            "loss": 0.08228
+          },
+          {
+            "step": 2575.0,
+            "loss": 0.08183
+          },
+          {
+            "step": 2600.0,
+            "loss": 0.08205
+          },
+          {
+            "step": 2625.0,
+            "loss": 0.08128
+          },
+          {
+            "step": 2650.0,
+            "loss": 0.08139
+          },
+          {
+            "step": 2675.0,
+            "loss": 0.08188
+          },
+          {
+            "step": 2700.0,
+            "loss": 0.08057
+          },
+          {
+            "step": 2725.0,
+            "loss": 0.08067
+          },
+          {
+            "step": 2750.0,
+            "loss": 0.08155
+          },
+          {
+            "step": 2775.0,
+            "loss": 0.08239
+          },
+          {
+            "step": 2800.0,
+            "loss": 0.08189
+          },
+          {
+            "step": 2825.0,
+            "loss": 0.08239
+          },
+          {
+            "step": 2850.0,
+            "loss": 0.08275
+          },
+          {
+            "step": 2875.0,
+            "loss": 0.08358
+          },
+          {
+            "step": 2900.0,
+            "loss": 0.08297
+          },
+          {
+            "step": 2925.0,
+            "loss": 0.0828
+          },
+          {
+            "step": 2950.0,
+            "loss": 0.08257
+          },
+          {
+            "step": 2975.0,
+            "loss": 0.08303
+          },
+          {
+            "step": 3000.0,
+            "loss": 0.08181
+          }
+        ],
+        "note": "Courbe TensorBoard 3000 steps (dim=72, alpha=128)"
+      },
+      "proofs": [
+        {
+          "kind": "sample",
+          "path": "docs/framework/assets/nemeris_sd15_xy_loss_contact_sheet.png",
+          "exists": true,
+          "width": 1818,
+          "height": 1402,
+          "step": 3000,
+          "prompt": "Planche 8 prompts A→H + Courbe TensorBoard 3000 steps"
+        },
+        {
+          "kind": "checkpoint",
+          "path": "/home/nzonzi/ComfyUI/SDXL_trainer_output/nemeris_-step00003000.safetensors",
+          "exists": true,
+          "width": null,
+          "height": null,
+          "step": null,
+          "prompt": ""
+        }
+      ],
+      "has_real_proof": true
+    }
+  ],
+  "stats": {
+    "run_count": 13,
+    "status_counts": {
+      "active": 1,
+      "waiting": 1,
+      "completed": 7,
+      "interrupted": 4,
+      "later": 0
+    }
+  },
+  "organigram": {
+    "section_id": "organigramme",
+    "diagrams": [
+      {
+        "id": "diag-chain",
+        "title": "Chaîne de formation Delphine",
+        "subtitle": "SD1.5 → SDXL → Flux · bases, GPU et outils",
+        "mermaid": "flowchart LR\n  subgraph P1[\"Phase 1 — SD1.5\"]\n    direction TB\n    D1[\"Dataset Delphine<br/>Selection_2/images\"]\n    B1[\"Base: DreamShaper 8\"]\n    T1[\"Kohya · GPU1 (M40 24GB)\"]\n    C1[\"LoRA SD1.5\"]\n    D1 --> B1 --> T1 --> C1\n  end\n  subgraph P2[\"Phase 2 — SDXL\"]\n    direction TB\n    D2[\"Dataset Delphine\"]\n    B2[\"Base: Juggernaut XL Ragnarok\"]\n    T2[\"Kohya · GPU1 (M40 24GB)\"]\n    C2[\"LoRA SDXL\"]\n    D2 --> B2 --> T2 --> C2\n  end\n  subgraph P3[\"Phase 3 — Flux\"]\n    direction TB\n    D3[\"Dataset Delphine\"]\n    B3[\"Base: Flux.1 dev\"]\n    T3[\"ComfyUI :8189 · GPU0 (3060 12GB)\"]\n    C3[\"LoRA Flux\"]\n    D3 --> B3 --> T3 --> C3\n  end\n  C1 -.->|alimente| B2\n  C2 -.->|alimente| B3\n  classDef gpu0 fill:#1f3a5f,stroke:#6aa9ff,color:#e6f0ff\n  classDef gpu1 fill:#3a1f1f,stroke:#ff8a6a,color:#ffe6e0\n  classDef phase fill:#1b1b1e,stroke:#888,color:#fff\n  class T1,T2 gpu1\n  class T3 gpu0\n  class C1,C2,C3 phase\n"
+      },
+      {
+        "id": "diag-agents",
+        "title": "Interaction agents",
+        "subtitle": "NEMOKID ↔ Composeur ↔ claude-nim · bus mailbox.message.v1",
+        "mermaid": "flowchart LR\n  NEM[\"NEMOKID<br/>Orchestrateur\"]\n  COMP[\"Composeur<br/>Bus JSON\"]\n  CLAUDE[\"claude-nim<br/>Revue externe\"]\n  MAIL[\"Mailbox<br/>/media/raid10to/projets/mailbox/messages/\"]\n  NEM <-->|\"mailbox.message.v1\"| COMP\n  COMP <-->|\"mailbox.message.v1\"| CLAUDE\n  COMP -.->|\"messages/*.json\"| MAIL\n  classDef agent fill:#1f3a5f,stroke:#6aa9ff,color:#e6f0ff\n  classDef bus fill:#2a2a3a,stroke:#b48aff,color:#f0e6ff\n  classDef store fill:#1b1b1e,stroke:#888,color:#ddd\n  class NEM,CLAUDE agent\n  class COMP bus\n  class MAIL store\n"
+      },
+      {
+        "id": "diag-gpu",
+        "title": "Allocation GPU",
+        "subtitle": "GPU0 ComfyUI · GPU1 Kohya · 8765 verrouillé",
+        "mermaid": "flowchart TB\n  subgraph G0[\"GPU0 — RTX 3060 12GB\"]\n    G0A[\"ComfyUI :8189 (API)\"]\n    G0B[\"ComfyUI :8188 (UI)\"]\n    G0C[\"Flux LoRA training/inference\"]\n  end\n  subgraph G1[\"GPU1 — Tesla M40 24GB\"]\n    G1A[\"Kohya sd-scripts\"]\n    G1B[\"SD1.5 + SDXL LoRA training\"]\n  end\n  RAG[\"RAG API :8765 — NE PAS TOUCHER\"]\n  classDef gpu0 fill:#1f3a5f,stroke:#6aa9ff,color:#e6f0ff\n  classDef gpu1 fill:#3a1f1f,stroke:#ff8a6a,color:#ffe6e0\n  classDef locked fill:#3a3a1f,stroke:#ffd76a,color:#fff8e0\n  class G0A,G0B,G0C gpu0\n  class G1A,G1B gpu1\n  class RAG locked\n"
+      },
+      {
+        "id": "diag-pipeline",
+        "title": "Pipeline dataset → HF",
+        "subtitle": "Dataset → training → checkpoint → évaluation → publication",
+        "mermaid": "flowchart LR\n  DS[\"Dataset<br/>/raid1_II/Pictures/.../2_delphine_cassarino\"]\n  PREP[\"Préparation<br/>captioning + crop\"]\n  TRAIN[\"Training<br/>Kohya / ComfyUI\"]\n  CKPT[\"Checkpoint .safetensors\"]\n  EVAL[\"Évaluation A/B<br/>+ samples smoke\"]\n  PUB[\"Publication HF<br/>hf_lora_publish.py\"]\n  HF[\"Hugging Face Hub\"]\n  DS --> PREP --> TRAIN --> CKPT --> EVAL --> PUB --> HF\n  classDef data fill:#1b3a2a,stroke:#6affb4,color:#e0fff0\n  classDef proc fill:#1b1b1e,stroke:#888,color:#fff\n  classDef out fill:#1f3a5f,stroke:#6aa9ff,color:#e6f0ff\n  class DS data\n  class PREP,TRAIN,EVAL,PUB proc\n  class CKPT,HF out\n"
+      }
+    ]
+  }
+}
